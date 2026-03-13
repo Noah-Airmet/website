@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons from Using AI Tools in Production — Noah</title>
+  <meta name="description" content="What happens when your development team adopts AI coding assistants before your security and compliance teams have a framework for reviewing AI-generated code?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">Noah</a>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#focus">Focus Areas</a>
+          <a href="../blog.html">Writing</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="post-header">
+      <div class="container container--narrow">
+        <a href="../blog.html" class="post-back">← Back to all posts</a>
+        <h1 class="animate-on-scroll">Coming Soon: Lessons from Using AI Tools in Production — A Governance Perspective</h1>
+        <div class="post-meta animate-on-scroll" data-delay="1">
+          <span>April 2026</span>
+          <span>·</span>
+          <span>8 min read</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="article-content">
+      <div class="container container--narrow">
+
+        <p class="animate-on-scroll">This post is a preview — a placeholder for an upcoming piece exploring what it's actually like to use AI coding assistants in a production environment, and why that experience matters for the people writing AI governance policy.</p>
+
+        <h2>The Gap Between Policy and Practice</h2>
+
+        <p>Most AI governance frameworks are written by people who've never shipped code with an AI assistant. That's not a criticism — it's a structural gap. The people writing policy and the people using AI tools in daily development workflows rarely overlap. But they should.</p>
+
+        <p>When you use tools like Cursor and Claude to build production web applications every day, you encounter governance questions in their most concrete form:</p>
+
+        <ul>
+          <li>What data from your codebase is being sent to third-party AI models?</li>
+          <li>Who reviews AI-generated code before it hits production?</li>
+          <li>How do you attribute authorship — and liability — for AI-assisted output?</li>
+          <li>What happens when the AI suggests a dependency with a known vulnerability?</li>
+        </ul>
+
+        <blockquote>
+          <p>The strongest governance frameworks will come from people who understand the technology from the inside — not just as an abstraction, but as a daily workflow.</p>
+        </blockquote>
+
+        <h2>What I'll Cover</h2>
+
+        <p>The full post will explore these themes through the lens of my own experience as a junior developer working with AI tools at Simplicity Group, grounded in the frameworks that are emerging to address these questions.</p>
+
+        <h3>Frameworks in Focus</h3>
+
+        <p>Several frameworks are beginning to address AI governance in ways that directly touch development workflows:</p>
+
+        <ol>
+          <li><strong>NIST AI RMF</strong> — The risk management framework that's becoming the de facto standard for U.S. organizations thinking about AI governance</li>
+          <li><strong>ISO/IEC 42001</strong> — The international standard for AI management systems, with requirements that map directly to how teams adopt and oversee AI tools</li>
+          <li><strong>EU AI Act</strong> — The most comprehensive regulatory framework to date, with risk classifications that have implications for AI-assisted development</li>
+        </ol>
+
+        <h3>A Practical Example</h3>
+
+        <p>Consider a simple scenario: your team adopts an AI coding assistant. The tool has access to your codebase through its context window. It suggests code completions, refactors functions, and generates boilerplate. Productivity goes up. But has anyone asked:</p>
+
+        <pre><code>// Questions your compliance team should be asking:
+//
+// 1. Data flow: What code/data leaves your environment?
+// 2. Review: Is AI-generated code held to the same review standard?
+// 3. Licensing: Does the AI's training data create IP risk?
+// 4. Audit trail: Can you distinguish human from AI code?
+// 5. Vendor risk: What's the AI provider's data retention policy?</code></pre>
+
+        <p>These aren't hypothetical. They're the questions I encounter in my own workflow, and they're the questions that governance frameworks need to address with practical, implementable guidance — not just high-level principles.</p>
+
+        <h2>Coming Soon</h2>
+
+        <p>The full post will be published in April 2026. It will draw on my daily experience with AI development tools and connect those experiences to the governance frameworks that are shaping how organizations should think about AI risk.</p>
+
+        <p>In the meantime, feel free to <a href="../index.html#contact">reach out</a> if you're working on similar questions — I'm always interested in connecting with people thinking seriously about AI governance.</p>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Noah. Built by Noah.</p>
+    </div>
+  </footer>
+
+  <script src="../js/cursor-trace.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
