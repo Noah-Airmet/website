@@ -168,20 +168,26 @@
     }
   }
 
+  var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
   function start() {
     initCanvas();
     resize();
     window.addEventListener('resize', resize);
-    window.addEventListener('mousemove', onMove);
-    window.addEventListener('mouseleave', onLeave);
+    if (!isTouch) {
+      window.addEventListener('mousemove', onMove);
+      window.addEventListener('mouseleave', onLeave);
+    }
     render();
   }
 
   function cleanup() {
     cancelAnimationFrame(frame);
     window.removeEventListener('resize', resize);
-    window.removeEventListener('mousemove', onMove);
-    window.removeEventListener('mouseleave', onLeave);
+    if (!isTouch) {
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseleave', onLeave);
+    }
     if (canvas && canvas.parentNode) {
       canvas.parentNode.removeChild(canvas);
     }
