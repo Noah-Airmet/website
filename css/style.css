@@ -792,42 +792,30 @@ section {
   padding: calc(var(--nav-height) + var(--space-2xl)) 0 var(--space-xl);
 }
 
-.ethics-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(260px, 1fr);
-  gap: var(--space-xl);
-  align-items: start;
+.ethics-hero-copy {
+  max-width: 42rem;
 }
 
 .ethics-hero h1 {
   font-size: var(--text-4xl);
   margin-bottom: var(--space-md);
-  max-width: 10ch;
+  max-width: 12ch;
 }
 
 .ethics-lede {
   font-size: var(--text-xl);
   line-height: 1.55;
   color: var(--color-text-secondary);
-  max-width: 36rem;
+  max-width: none;
 }
 
-.ethics-hero-aside,
 .ethics-rail,
-.ethics-principle,
-.ethics-note {
+.ethics-principle {
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
 }
 
-.ethics-hero-aside {
-  border-top: 3px solid var(--color-accent);
-  border-radius: 16px;
-  padding: var(--space-lg);
-}
-
-.ethics-aside-label,
 .ethics-rail-label {
   font-size: var(--text-sm);
   font-weight: 700;
@@ -837,24 +825,6 @@ section {
   margin-bottom: var(--space-sm);
 }
 
-.ethics-tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: var(--space-md);
-}
-
-.ethics-tag-list li {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--color-primary);
-  padding: 0.45rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid rgba(42, 127, 127, 0.16);
-  background: rgba(42, 127, 127, 0.06);
-}
-
-.ethics-scroll-hint,
 .ethics-rail-note {
   color: var(--color-text-secondary);
   font-size: 0.98rem;
@@ -914,8 +884,7 @@ section {
   gap: var(--space-lg);
 }
 
-.ethics-principle,
-.ethics-note {
+.ethics-principle {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr);
   gap: var(--space-md);
@@ -924,15 +893,10 @@ section {
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
-.ethics-principle.is-active,
-.ethics-note.is-active {
+.ethics-principle.is-active {
   transform: translateY(-2px);
   border-color: rgba(42, 127, 127, 0.28);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), 0 18px 48px rgba(0, 0, 0, 0.04);
-}
-
-.ethics-note {
-  background: linear-gradient(180deg, rgba(42, 127, 127, 0.08), rgba(255, 255, 255, 0.96));
 }
 
 .ethics-principle-number {
@@ -940,13 +904,6 @@ section {
   font-size: clamp(2.5rem, 6vw, 4rem);
   line-height: 0.9;
   color: rgba(26, 31, 54, 0.16);
-}
-
-.ethics-principle-number--note {
-  font-family: var(--font-mono);
-  font-size: 2rem;
-  letter-spacing: 0.08em;
-  color: rgba(42, 127, 127, 0.6);
 }
 
 .ethics-principle-label {
@@ -972,6 +929,19 @@ section {
   margin-top: var(--space-sm);
 }
 
+.ethics-footnote {
+  margin: 0 0 0 calc(72px + var(--space-md));
+  max-width: 40rem;
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.ethics-footnote em {
+  color: var(--color-primary);
+}
+
 /* ============================================
    Responsive — Tablet (768px)
    ============================================ */
@@ -986,15 +956,9 @@ section {
 }
 
 @media (max-width: 1023px) {
-  .ethics-hero-grid,
   .ethics-grid,
-  .ethics-principle,
-  .ethics-note {
+  .ethics-principle {
     grid-template-columns: 1fr;
-  }
-
-  .ethics-hero h1 {
-    max-width: none;
   }
 
   .ethics-rail {
@@ -1018,6 +982,11 @@ section {
     border-color: rgba(42, 127, 127, 0.26);
     background: rgba(42, 127, 127, 0.08);
     transform: none;
+  }
+
+  .ethics-footnote {
+    margin-left: 0;
+    max-width: none;
   }
 }
 
@@ -1076,8 +1045,6 @@ section {
   }
 
   .ethics-principle,
-  .ethics-note,
-  .ethics-hero-aside,
   .ethics-rail {
     padding: var(--space-lg);
     border-radius: 14px;
