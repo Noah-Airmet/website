@@ -759,6 +759,220 @@ section {
 }
 
 /* ============================================
+   Professional Commitments Page
+   ============================================ */
+.eyebrow {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.ethics-progress {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(42, 127, 127, 0.08);
+  z-index: 99;
+}
+
+.ethics-progress-bar {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent), #5ca7a7);
+  transition: width 0.15s linear;
+}
+
+.ethics-hero {
+  padding: calc(var(--nav-height) + var(--space-2xl)) 0 var(--space-xl);
+}
+
+.ethics-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(260px, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.ethics-hero h1 {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-md);
+  max-width: 10ch;
+}
+
+.ethics-lede {
+  font-size: var(--text-xl);
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  max-width: 36rem;
+}
+
+.ethics-hero-aside,
+.ethics-rail,
+.ethics-principle,
+.ethics-note {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.ethics-hero-aside {
+  border-top: 3px solid var(--color-accent);
+  border-radius: 16px;
+  padding: var(--space-lg);
+}
+
+.ethics-aside-label,
+.ethics-rail-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.ethics-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.ethics-tag-list li {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  padding: 0.45rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(42, 127, 127, 0.16);
+  background: rgba(42, 127, 127, 0.06);
+}
+
+.ethics-scroll-hint,
+.ethics-rail-note {
+  color: var(--color-text-secondary);
+  font-size: 0.98rem;
+  line-height: var(--leading-normal);
+}
+
+.ethics-body {
+  padding-top: 0;
+  padding-bottom: var(--space-3xl);
+}
+
+.ethics-grid {
+  max-width: 1120px;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.ethics-rail {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-lg));
+  border-radius: 16px;
+  padding: var(--space-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.ethics-rail-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: var(--space-md);
+}
+
+.ethics-rail-links a {
+  color: var(--color-text-secondary);
+  padding: 0.45rem 0 0.45rem 0.9rem;
+  border-left: 2px solid transparent;
+  font-size: 0.98rem;
+  transition: color var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.ethics-rail-links a:hover,
+.ethics-rail-links a.active {
+  color: var(--color-primary);
+}
+
+.ethics-rail-links a.active {
+  border-left-color: var(--color-accent);
+  transform: translateX(4px);
+}
+
+.ethics-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.ethics-principle,
+.ethics-note {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  border-radius: 18px;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.ethics-principle.is-active,
+.ethics-note.is-active {
+  transform: translateY(-2px);
+  border-color: rgba(42, 127, 127, 0.28);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), 0 18px 48px rgba(0, 0, 0, 0.04);
+}
+
+.ethics-note {
+  background: linear-gradient(180deg, rgba(42, 127, 127, 0.08), rgba(255, 255, 255, 0.96));
+}
+
+.ethics-principle-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 0.9;
+  color: rgba(26, 31, 54, 0.16);
+}
+
+.ethics-principle-number--note {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  color: rgba(42, 127, 127, 0.6);
+}
+
+.ethics-principle-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.ethics-principle-body h2 {
+  margin-bottom: var(--space-sm);
+  font-size: var(--text-3xl);
+}
+
+.ethics-principle-body p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.ethics-principle-body p + p {
+  margin-top: var(--space-sm);
+}
+
+/* ============================================
    Responsive — Tablet (768px)
    ============================================ */
 @media (min-width: 768px) {
@@ -768,6 +982,42 @@ section {
 
   .credentials-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ethics-hero-grid,
+  .ethics-grid,
+  .ethics-principle,
+  .ethics-note {
+    grid-template-columns: 1fr;
+  }
+
+  .ethics-hero h1 {
+    max-width: none;
+  }
+
+  .ethics-rail {
+    position: static;
+    top: auto;
+  }
+
+  .ethics-rail-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .ethics-rail-links a {
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+  }
+
+  .ethics-rail-links a.active {
+    border-color: rgba(42, 127, 127, 0.26);
+    background: rgba(42, 127, 127, 0.08);
+    transform: none;
   }
 }
 
@@ -816,6 +1066,23 @@ section {
     padding: calc(var(--nav-height) + var(--space-xl)) 0 var(--space-xl);
   }
 
+  .ethics-hero {
+    padding: calc(var(--nav-height) + var(--space-xl)) 0 var(--space-lg);
+  }
+
+  .ethics-lede,
+  .ethics-principle-body p {
+    font-size: 1.05rem;
+  }
+
+  .ethics-principle,
+  .ethics-note,
+  .ethics-hero-aside,
+  .ethics-rail {
+    padding: var(--space-lg);
+    border-radius: 14px;
+  }
+
   section {
     padding: var(--space-xl) 0;
   }
@@ -837,5 +1104,20 @@ section {
     margin: 0 auto var(--space-md);
     width: 120px;
     height: 120px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
