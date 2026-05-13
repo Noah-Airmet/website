@@ -1,0 +1,12 @@
+name = "gsa-access-request"
+main = "src/index.js"
+compatibility_date = "2026-05-13"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "access-request.noahairmet.com", custom_domain = true }
+]
+
+[[send_email]]
+name = "ACCESS_REQUEST_EMAIL"
+destination_address = "noah.airmet@icloud.com"

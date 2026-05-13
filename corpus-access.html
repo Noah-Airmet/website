@@ -38,9 +38,29 @@
       <div class="container container--narrow">
         <p class="eyebrow">Private archive</p>
         <h1>Request access</h1>
-        <p class="access-request__lede">The Gospel Scholar Archive is a private research tool for approved friends. Send Noah a quick note with your name and the email address you want approved for login.</p>
+        <p class="access-request__lede">The Gospel Scholar Archive is a private research tool for approved friends. Send Noah your name and the email address you want approved for login.</p>
+        <form class="access-request__form" data-access-request-form>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" placeholder="David Harper">
+          </label>
+          <label>
+            Email to approve
+            <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            How do you know Noah?
+            <textarea name="relationship" rows="3" placeholder="A quick note so Noah recognizes the request"></textarea>
+          </label>
+          <label class="access-request__website">
+            Website
+            <input name="website" type="text" tabindex="-1" autocomplete="off">
+          </label>
+          <button class="contact-link" type="submit">Send request</button>
+          <p class="access-request__status" data-access-request-status role="status" aria-live="polite"></p>
+        </form>
         <div class="access-request__actions">
-          <a class="contact-link" href="mailto:noah.airmet@icloud.com?subject=Gospel%20Scholar%20Archive%20access%20request&body=Hi%20Noah%2C%0A%0AI%27d%20like%20access%20to%20the%20Gospel%20Scholar%20Archive.%0A%0AName%3A%20%0AEmail%20to%20approve%3A%20%0AHow%20you%20know%20Noah%3A%20">Email Noah</a>
+          <a class="access-request__secondary" href="mailto:noah.airmet@icloud.com?subject=Gospel%20Scholar%20Archive%20access%20request&body=Hi%20Noah%2C%0A%0AI%27d%20like%20access%20to%20the%20Gospel%20Scholar%20Archive.%0A%0AName%3A%20%0AEmail%20to%20approve%3A%20%0AHow%20you%20know%20Noah%3A%20">Email instead</a>
           <a class="access-request__secondary" href="https://corpus.noahairmet.com">Try signing in again</a>
         </div>
       </div>
@@ -54,5 +74,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/access-request.js"></script>
 </body>
 </html>
