@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260604-polish2">
+  <link rel="stylesheet" href="css/style.css?v=20260604-home">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
           <span></span>
         </button>
         <div class="nav-links">
-          <a href="#writing">Writing</a>
+          <a href="blog.html">Writing</a>
           <a href="commitments.html">Commitments</a>
           <a href="#contact">Contact</a>
         </div>
@@ -61,9 +61,9 @@
         <aside class="home-hero__aside animate-on-scroll" aria-label="Current focus">
           <img class="home-hero__portrait" src="assets/headshot.jpg" alt="Noah Airmet" width="160" height="160">
           <div class="home-hero__facts">
-            <p>BYU Cybersecurity</p>
-            <p>Junior Developer, Simplicity Group</p>
-            <p>AI governance + GRC</p>
+            <p>BYU cybersecurity</p>
+            <p>Junior developer, Simplicity Group</p>
+            <p>AI governance and GRC</p>
           </div>
         </aside>
       </div>
@@ -83,95 +83,64 @@
       </div>
     </section>
 
-    <section class="site-section" id="focus">
+    <section class="site-section home-summary">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker animate-on-scroll">Focus</p>
-          <p class="animate-on-scroll">The through-line is practical judgment: how to help teams move quickly without
-            pretending uncertainty, security, and accountability can be wished away.</p>
+        <div class="home-summary__header animate-on-scroll">
+          <h2>Focus and credentials</h2>
+          <p>The through-line is practical judgment: helping teams move quickly without pretending uncertainty,
+            security, and accountability can be wished away.</p>
         </div>
 
-        <div class="focus-list">
-          <article class="focus-item animate-on-scroll">
-            <h3>AI governance and risk</h3>
-            <p>Studying how organizations translate NIST AI RMF, ISO/IEC 42001, the EU AI Act, and emerging state rules
-              into controls that teams can actually follow.</p>
-          </article>
-          <article class="focus-item animate-on-scroll">
-            <h3>Cybersecurity GRC</h3>
-            <p>Building a foundation in risk management, compliance, security frameworks, policy communication, and the
-              governance habits that make technical systems trustworthy.</p>
-          </article>
-          <article class="focus-item animate-on-scroll">
-            <h3>AI-assisted development</h3>
-            <p>Using modern coding tools in real development work, with attention to review quality, data handling,
-              dependency risk, authorship, and the gap between policy language and daily engineering practice.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <div class="home-summary__grid">
+          <section class="home-summary__panel animate-on-scroll" id="focus" aria-labelledby="focus-title">
+            <h3 id="focus-title">Focus</h3>
+            <div class="focus-list">
+              <article class="focus-item">
+                <h4>AI governance and risk</h4>
+                <p>Turning frameworks like NIST AI RMF and ISO/IEC 42001 into controls teams can actually follow.</p>
+              </article>
+              <article class="focus-item">
+                <h4>Cybersecurity GRC</h4>
+                <p>Risk management, compliance, policy communication, and security habits that make systems
+                  trustworthy.</p>
+              </article>
+              <article class="focus-item">
+                <h4>AI-assisted development</h4>
+                <p>Review quality, data handling, dependency risk, authorship, and the gap between policy and daily
+                  engineering practice.</p>
+              </article>
+            </div>
+          </section>
 
-    <section class="site-section" id="credentials">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker animate-on-scroll">Credentials</p>
-          <p class="animate-on-scroll">A compact snapshot of the work, study, and professional development behind the
-            focus areas above.</p>
-        </div>
-
-        <ul class="credentials-list">
-          <li class="animate-on-scroll">
-            <h3>Junior Developer, Simplicity Group</h3>
-            <div>
-              <p class="credential-meta">June 2025 - Present</p>
-              <p class="credential-detail">Building production web applications and working daily with AI-assisted
-                development tools.</p>
-            </div>
-          </li>
-          <li class="animate-on-scroll">
-            <h3>B.S. Cybersecurity, BYU</h3>
-            <div>
-              <p class="credential-meta">Expected Spring 2028</p>
-              <p class="credential-detail">Coursework includes network security, web security, cybersecurity ethics,
-                and core cybersecurity concepts.</p>
-            </div>
-          </li>
-          <li class="animate-on-scroll">
-            <h3>Certifications in progress</h3>
-            <div>
-              <p class="credential-meta">IAPP AIGP + CompTIA Security+</p>
-              <p class="credential-detail">Preparing across AI governance and foundational cybersecurity practice.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="site-section" id="writing">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker animate-on-scroll">Writing</p>
-          <p class="animate-on-scroll">Notes and longer pieces on the kind of work I want to do: responsible technical
-            practice, governance, and AI risk.</p>
-        </div>
-
-        <div class="writing-list">
-          <article class="writing-item animate-on-scroll">
-            <span class="writing-date">April 2026</span>
-            <div>
-              <h3><a href="commitments.html">Professional Commitments</a></h3>
-              <p class="writing-excerpt">A personal code of ethics for cybersecurity, AI governance, and responsible
-                technical practice.</p>
-            </div>
-          </article>
-          <article class="writing-item animate-on-scroll">
-            <span class="writing-date">April 2026</span>
-            <div>
-              <h3><a href="posts/template.html">Coming Soon: Lessons from Using AI Tools in Production</a></h3>
-              <p class="writing-excerpt">A practical look at the governance questions that appear when AI coding tools
-                become part of real development workflows.</p>
-            </div>
-          </article>
+          <section class="home-summary__panel animate-on-scroll" id="credentials" aria-labelledby="credentials-title">
+            <h3 id="credentials-title">Credentials</h3>
+            <ul class="credentials-list">
+              <li>
+                <h4>Junior Developer, Simplicity Group</h4>
+                <div>
+                  <p class="credential-meta">June 2025 - Present</p>
+                  <p class="credential-detail">Production web applications with AI-assisted development tools in the
+                    workflow.</p>
+                </div>
+              </li>
+              <li>
+                <h4>B.S. Cybersecurity, BYU</h4>
+                <div>
+                  <p class="credential-meta">Expected Spring 2028</p>
+                  <p class="credential-detail">Network security, web security, cybersecurity ethics, and core security
+                    concepts.</p>
+                </div>
+              </li>
+              <li>
+                <h4>Certifications in progress</h4>
+                <div>
+                  <p class="credential-meta">IAPP AIGP + CompTIA Security+</p>
+                  <p class="credential-detail">Preparing across AI governance and foundational cybersecurity practice.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </section>

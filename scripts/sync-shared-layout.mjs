@@ -59,7 +59,7 @@ function renderHeader(relativePath) {
   const onHome = relativePath === "index.html";
   const links = [
     {
-      href: onHome ? "#writing" : `${prefix}blog.html`,
+      href: `${prefix}blog.html`,
       label: "Writing",
       section: "writing"
     },
