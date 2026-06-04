@@ -34,6 +34,28 @@ body::before {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 62vh);
 }
 
+.ambient-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.95;
+  mix-blend-mode: multiply;
+}
+
+.site-nav,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 759px), (prefers-reduced-motion: reduce) {
+  .ambient-field {
+    display: none;
+  }
+}
+
 img,
 svg {
   display: block;
