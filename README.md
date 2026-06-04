@@ -12,6 +12,13 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
+Before committing header/nav changes, run:
+
+```bash
+npm run sync:layout
+npm test
+```
+
 ## File Structure
 
 ```
@@ -23,6 +30,8 @@ Then visit `http://localhost:8000`.
 │   └── style.css           All styles, CSS custom properties
 ├── js/
 │   └── main.js             Scroll animations, nav, mobile menu
+├── scripts/
+│   └── sync-shared-layout.mjs  Generates the shared header/nav
 ├── assets/
 │   ├── headshot.jpg         Your headshot (replace placeholder)
 │   └── resume.pdf           Your resume (add file)
@@ -55,4 +64,5 @@ All design tokens are CSS custom properties in `:root` at the top of `css/style.
 4. Choose **main** branch, **/ (root)** folder.
 5. Save. Your site will be live at `https://<username>.github.io/<repo-name>/`.
 
-No build step, no CI/CD configuration needed.
+The GitHub Pages workflow runs `npm test` before deployment so shared
+navigation cannot drift between pages.

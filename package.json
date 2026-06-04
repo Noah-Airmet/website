@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sync:layout": "node scripts/sync-shared-layout.mjs",
+    "check:layout": "node scripts/sync-shared-layout.mjs --check",
+    "test": "npm run check:layout"
+  },
+  "devDependencies": {}
+}
