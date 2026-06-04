@@ -51,7 +51,6 @@
   display: grid;
   gap: 0.45rem;
   padding-top: var(--space-3);
-  border-top: 1px solid var(--color-line);
 }
 
 .home-hero__facts p {
@@ -84,8 +83,6 @@
 
 .home-summary {
   padding: var(--space-5) 0;
-  border-top: 1px solid var(--color-line);
-  border-bottom: 1px solid var(--color-line);
   background: rgba(243, 240, 234, 0.48);
 }
 
@@ -127,14 +124,16 @@
 
 .home-summary .focus-list,
 .home-summary .credentials-list {
-  border-top-color: var(--color-line-strong);
+  gap: var(--space-4);
+  border-top: 0;
 }
 
 .home-summary .focus-item,
 .home-summary .credentials-list li {
   grid-template-columns: 1fr;
   gap: var(--space-1);
-  padding: var(--space-3) 0;
+  padding: 0;
+  border-bottom: 0;
 }
 
 .home-summary .focus-item h4,
@@ -162,7 +161,6 @@
   gap: var(--space-5);
   align-items: center;
   padding: var(--space-6) 0;
-  border-top: 1px solid var(--color-line);
 }
 
 .contact-panel p {
