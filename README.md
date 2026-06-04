@@ -12,7 +12,7 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-Before committing header/nav changes, run:
+Before committing shared layout or visual changes, run:
 
 ```bash
 npm run sync:layout
@@ -27,11 +27,16 @@ npm test
 ├── posts/
 │   └── template.html       Blog post template (duplicate for new posts)
 ├── css/
-│   └── style.css           All styles, CSS custom properties
+│   ├── style.css           CSS import manifest
+│   ├── tokens.css          Colors, type scale, spacing
+│   ├── base.css            Resets and base typography
+│   ├── layout.css          Containers, nav, footer, sections
+│   ├── components.css      Reusable lists, buttons, motion
+│   └── pages.css           Page-specific layouts
 ├── js/
 │   └── main.js             Scroll animations, nav, mobile menu
 ├── scripts/
-│   └── sync-shared-layout.mjs  Generates the shared header/nav
+│   └── sync-shared-layout.mjs  Generates shared nav/footer and static checks
 ├── assets/
 │   ├── headshot.jpg         Your headshot (replace placeholder)
 │   └── resume.pdf           Your resume (add file)
@@ -54,7 +59,8 @@ npm test
 
 ### Colors and Fonts
 
-All design tokens are CSS custom properties in `:root` at the top of `css/style.css`. Change colors, fonts, or spacing there and it propagates everywhere.
+All design tokens are CSS custom properties in `css/tokens.css`. Change colors,
+fonts, or spacing there and it propagates everywhere.
 
 ## Deploy to GitHub Pages
 
@@ -65,4 +71,5 @@ All design tokens are CSS custom properties in `:root` at the top of `css/style.
 5. Save. Your site will be live at `https://<username>.github.io/<repo-name>/`.
 
 The GitHub Pages workflow runs `npm test` before deployment so shared
-navigation cannot drift between pages.
+navigation/footer cannot drift between pages and public pages cannot reintroduce
+archive access links or the old cursor-trace background.

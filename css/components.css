@@ -1,0 +1,144 @@
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.button-link,
+.contact-link,
+.access-request__form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--color-line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-ink);
+  cursor: pointer;
+  font: inherit;
+}
+
+.button-link:hover,
+.contact-link:hover,
+.access-request__form button:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.button-link--primary {
+  border-color: var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.button-link--primary:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.meta-list,
+.credentials-list,
+.writing-list,
+.focus-list {
+  display: grid;
+  gap: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-line);
+}
+
+.meta-list li,
+.credentials-list li,
+.writing-item,
+.focus-item {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.meta-list li {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+}
+
+.meta-term,
+.writing-date,
+.credential-meta,
+.post-meta,
+.ethics-principle-label {
+  color: var(--color-muted);
+  font-size: var(--step--1);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.focus-item,
+.writing-item,
+.credentials-list li {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.36fr) minmax(0, 1fr);
+  gap: var(--space-5);
+  padding: var(--space-4) 0;
+}
+
+.focus-item h3,
+.writing-item h3,
+.credentials-list h3 {
+  font-family: var(--font-body);
+  font-size: var(--step-1);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.focus-item p,
+.writing-excerpt,
+.credential-detail {
+  color: var(--color-muted);
+}
+
+.writing-item h3 a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.writing-item h3 a:hover {
+  color: var(--color-accent);
+}
+
+.status-dot,
+.credential-tag,
+.read-more,
+.view-all {
+  display: none;
+}
+
+.animate-on-scroll {
+  opacity: 1;
+  transform: translateY(0.7rem);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .meta-list li,
+  .focus-item,
+  .writing-item,
+  .credentials-list li {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}

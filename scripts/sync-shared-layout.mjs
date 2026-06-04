@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile } from "node:fs/promises";
+import { access, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -16,6 +16,19 @@ const generatedHeaderPattern =
   /<!-- shared-nav:start -->[\s\S]*?<!-- shared-nav:end -->/;
 const legacyHeaderPattern =
   /<header class="site-nav" role="banner">[\s\S]*?<\/header>/;
+const generatedFooterPattern =
+  /<!-- shared-footer:start -->[\s\S]*?<!-- shared-footer:end -->/;
+const legacyFooterPattern =
+  /<footer class="site-footer">[\s\S]*?<\/footer>/;
+
+const requiredCssModules = [
+  "css/tokens.css",
+  "css/base.css",
+  "css/layout.css",
+  "css/components.css",
+  "css/pages.css",
+  "css/style.css"
+];
 
 function pagePrefix(relativePath) {
   const depth = relativePath.split(path.sep).length - 1;
@@ -81,6 +94,16 @@ ${links.map((link) => navLink(link, activeSection)).join("\n")}
   <!-- shared-nav:end -->`;
 }
 
+function renderFooter() {
+  return `<!-- shared-footer:start -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Noah Airmet</p>
+    </div>
+  </footer>
+  <!-- shared-footer:end -->`;
+}
+
 async function listHtmlFiles(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
   const files = [];
@@ -117,6 +140,26 @@ function assertNoPublicArchiveLinks(relativePath, html) {
   }
 }
 
+function assertNoPublicCursorTrace(relativePath, html) {
+  if (!publicPages.includes(relativePath)) return;
+
+  if (/cursor-trace\.js/i.test(html)) {
+    throw new Error(`${relativePath} includes cursor-trace.js`);
+  }
+}
+
+async function assertRequiredCssModules() {
+  await Promise.all(
+    requiredCssModules.map(async (relativePath) => {
+      try {
+        await access(path.join(repoRoot, relativePath));
+      } catch {
+        throw new Error(`Missing required CSS module: ${relativePath}`);
+      }
+    })
+  );
+}
+
 function replaceHeader(relativePath, html) {
   const header = renderHeader(relativePath);
   if (generatedHeaderPattern.test(html)) {
@@ -130,14 +173,30 @@ function replaceHeader(relativePath, html) {
   throw new Error(`${relativePath} is missing a site nav header`);
 }
 
+function replaceFooter(relativePath, html) {
+  const footer = renderFooter();
+  if (generatedFooterPattern.test(html)) {
+    return html.replace(generatedFooterPattern, footer);
+  }
+
+  if (legacyFooterPattern.test(html)) {
+    return html.replace(legacyFooterPattern, footer);
+  }
+
+  throw new Error(`${relativePath} is missing a site footer`);
+}
+
+await assertRequiredCssModules();
+
 const htmlFiles = await listHtmlFiles(repoRoot);
 const changed = [];
 
 for (const filePath of htmlFiles) {
   const relativePath = path.relative(repoRoot, filePath);
   const original = await readFile(filePath, "utf8");
-  const next = replaceHeader(relativePath, original);
+  const next = replaceFooter(relativePath, replaceHeader(relativePath, original));
   assertNoPublicArchiveLinks(relativePath, next);
+  assertNoPublicCursorTrace(relativePath, next);
 
   if (next !== original) {
     changed.push(relativePath);

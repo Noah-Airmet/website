@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Airmet</title>
-  <meta name="description" content="Cybersecurity student and working developer building toward a career in AI governance, risk, and compliance.">
+  <meta name="description"
+    content="Cybersecurity student and working developer building toward a career in AI governance, risk, and compliance.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -36,167 +41,165 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="hero-content container">
-        <h1 class="animate-on-scroll">Noah Airmet</h1>
-        <p class="hero-hook animate-on-scroll" data-delay="1">AI is moving fast. The rules around it aren't. I'm interested in closing that gap.</p>
-        <p class="hero-tagline animate-on-scroll" data-delay="2">Cybersecurity student and working developer building toward a career in AI governance, risk, and compliance.</p>
-      </div>
-      <div class="scroll-indicator" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
+    <section class="home-hero">
+      <div class="container home-hero__grid">
+        <div>
+          <p class="section-kicker home-hero__kicker animate-on-scroll">Cybersecurity GRC + AI governance</p>
+          <h1 class="animate-on-scroll">Noah Airmet</h1>
+          <p class="home-hero__lede animate-on-scroll">I’m building toward work that helps organizations use AI with
+            confidence, technical literacy, and real accountability.</p>
+          <p class="home-hero__note animate-on-scroll">Cybersecurity student at BYU and junior developer at Simplicity
+            Group, focused on the places where AI-assisted software development, risk, compliance, and policy meet.</p>
+          <div class="button-row animate-on-scroll">
+            <a class="button-link button-link--primary" href="mailto:noah.airmet@icloud.com">Email</a>
+            <a class="button-link" href="assets/resume.pdf">Resume</a>
+            <a class="button-link" href="https://www.linkedin.com/in/noah-airmet-165669333/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="home-hero__aside animate-on-scroll" aria-label="Current focus">
+          <img class="home-hero__portrait" src="assets/headshot.jpg" alt="Noah Airmet" width="160" height="160">
+          <p>Currently studying the frameworks and engineering realities behind responsible AI adoption, including NIST
+            AI RMF, ISO/IEC 42001, and cybersecurity governance practice.</p>
+        </aside>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2 class="animate-on-scroll">About</h2>
-        <div class="about-content animate-on-scroll" data-delay="1">
-          <img src="assets/headshot.jpg" alt="Noah — headshot" class="about-headshot" width="160" height="160">
-          <p>I'm a cybersecurity student at BYU and a junior developer at Simplicity Group, where I get to build web applications with AI-assisted tools like Cursor and Claude every day with a fantastic, forward-thinking team. I'm super excited about what these tools make possible and that's exactly why I think governance matters. The organizations that figure out how to use AI confidently and responsibly are the ones that will actually capture its full value.</p>
-          <p>But right now, most haven't answered the hard questions: whether AI-generated code is introducing security vulnerabilities, what proprietary data is being exposed to third-party models, and who's accountable when something goes wrong.</p>
-          <p>My experience is shaping the career I'm building. I'm focused on the intersection of cybersecurity GRC and AI governance, grounded in hands-on technical work and a serious understanding of the frameworks that matter — <span class="mono">NIST AI RMF</span>, <span class="mono">ISO 42001</span>, the <span class="mono">EU AI Act</span>, and the growing patchwork of U.S. state AI legislation.</p>
-          <p>I believe the strongest AI governance professionals will be the ones who understand the technology from the inside. That's what I'm building toward.</p>
+    <section class="site-section" id="about">
+      <div class="container about-grid">
+        <p class="section-kicker animate-on-scroll">About</p>
+        <div class="about-copy animate-on-scroll">
+          <p>I like technical work best when it has consequences beyond the screen: who can trust a system, what risk a
+            team is accepting, and whether an organization can explain the choices its tools make possible.</p>
+          <p>At Simplicity Group, I build production web applications with AI-assisted tools in the loop. That hands-on
+            view shapes how I think about governance. The strongest policies will be written by people who understand
+            the workflow, the code review pressure, the vendor questions, and the data exposure risks from the inside.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Focus Areas -->
-    <section id="focus">
+    <section class="site-section" id="focus">
       <div class="container">
-        <h2 class="animate-on-scroll">Focus Areas</h2>
-        <div class="focus-grid">
-          <div class="focus-card animate-on-scroll" data-delay="1">
-            <h3>AI Governance &amp; Risk Management</h3>
-            <p>Studying and applying the frameworks shaping responsible AI deployment: NIST AI RMF, ISO/IEC 42001, and the EU AI Act. Focused on how organizations can build practical, scalable governance around AI systems without killing the innovation that makes AI valuable.</p>
-          </div>
-          <div class="focus-card animate-on-scroll" data-delay="2">
+        <div class="section-heading">
+          <p class="section-kicker animate-on-scroll">Focus</p>
+          <p class="animate-on-scroll">The through-line is practical judgment: how to help teams move quickly without
+            pretending uncertainty, security, and accountability can be wished away.</p>
+        </div>
+
+        <div class="focus-list">
+          <article class="focus-item animate-on-scroll">
+            <h3>AI governance and risk</h3>
+            <p>Studying how organizations translate NIST AI RMF, ISO/IEC 42001, the EU AI Act, and emerging state rules
+              into controls that teams can actually follow.</p>
+          </article>
+          <article class="focus-item animate-on-scroll">
             <h3>Cybersecurity GRC</h3>
-            <p>Core academic focus in governance, risk, and compliance; from foundational frameworks like NIST CSF and ISO 27001 to emerging challenges around AI-specific risk, supply chain security, and multi-jurisdictional regulatory compliance.</p>
-          </div>
-          <div class="focus-card animate-on-scroll" data-delay="3">
-            <h3>AI-Assisted Software Development</h3>
-            <p>Hands-on daily experience building production web applications with AI coding tools. This practitioner perspective informs a grounded understanding of where AI governance meets real development workflows: code review, data exposure, IP ownership, and quality assurance.</p>
-          </div>
-          <div class="focus-card animate-on-scroll" data-delay="4">
-            <h3>Policy Analysis &amp; Communication</h3>
-            <p>Strong interest in translating complex technical and regulatory concepts into clear, actionable guidance. Preparing for the IAPP AIGP certification and developing skills in policy writing, risk communication, and executive briefing through academic work and competition preparation.</p>
-          </div>
+            <p>Building a foundation in risk management, compliance, security frameworks, policy communication, and the
+              governance habits that make technical systems trustworthy.</p>
+          </article>
+          <article class="focus-item animate-on-scroll">
+            <h3>AI-assisted development</h3>
+            <p>Using modern coding tools in real development work, with attention to review quality, data handling,
+              dependency risk, authorship, and the gap between policy language and daily engineering practice.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Writing -->
-    <section id="writing">
+    <section class="site-section" id="credentials">
       <div class="container">
-        <h2 class="animate-on-scroll">Writing</h2>
+        <div class="section-heading">
+          <p class="section-kicker animate-on-scroll">Credentials</p>
+          <p class="animate-on-scroll">A compact snapshot of the work, study, and professional development behind the
+            focus areas above.</p>
+        </div>
+
+        <ul class="credentials-list">
+          <li class="animate-on-scroll">
+            <h3>Junior Developer, Simplicity Group</h3>
+            <div>
+              <p class="credential-meta">June 2025 - Present</p>
+              <p class="credential-detail">Building production web applications and working daily with AI-assisted
+                development tools.</p>
+            </div>
+          </li>
+          <li class="animate-on-scroll">
+            <h3>B.S. Cybersecurity, BYU</h3>
+            <div>
+              <p class="credential-meta">Expected Spring 2028</p>
+              <p class="credential-detail">Coursework includes network security, web security, cybersecurity ethics,
+                and core cybersecurity concepts.</p>
+            </div>
+          </li>
+          <li class="animate-on-scroll">
+            <h3>Certifications in progress</h3>
+            <div>
+              <p class="credential-meta">IAPP AIGP + CompTIA Security+</p>
+              <p class="credential-detail">Preparing across AI governance and foundational cybersecurity practice.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="site-section" id="writing">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker animate-on-scroll">Writing</p>
+          <p class="animate-on-scroll">Notes and longer pieces on the kind of work I want to do: responsible technical
+            practice, governance, and AI risk.</p>
+        </div>
+
         <div class="writing-list">
-          <div class="writing-item animate-on-scroll" data-delay="1">
+          <article class="writing-item animate-on-scroll">
             <span class="writing-date">April 2026</span>
-            <h3><a href="commitments.html">Professional Commitments</a></h3>
-            <p class="writing-excerpt">A personal code of ethics for the kind of work I want to do in cybersecurity, AI governance, and responsible technical practice.</p>
-            <a href="commitments.html" class="read-more">Read more →</a>
-          </div>
-          <div class="writing-item animate-on-scroll" data-delay="2">
+            <div>
+              <h3><a href="commitments.html">Professional Commitments</a></h3>
+              <p class="writing-excerpt">A personal code of ethics for cybersecurity, AI governance, and responsible
+                technical practice.</p>
+            </div>
+          </article>
+          <article class="writing-item animate-on-scroll">
             <span class="writing-date">April 2026</span>
-            <h3><a href="posts/template.html">Coming Soon: Lessons from Using AI Tools in Production — A Governance Perspective</a></h3>
-            <p class="writing-excerpt">What happens when your development team adopts AI coding assistants before your security and compliance teams have a framework for reviewing AI-generated code? A first-hand account and practical takeaways.</p>
-            <a href="posts/template.html" class="read-more">Read more →</a>
-          </div>
-          <div class="writing-item animate-on-scroll" data-delay="3">
-            <span class="writing-date">Coming Soon</span>
-            <h3>More posts on the way</h3>
-            <p class="writing-excerpt">Thinking through AI governance frameworks, GRC challenges, and the intersection of policy and practice.</p>
-          </div>
-        </div>
-        <a href="blog.html" class="view-all animate-on-scroll">View all posts →</a>
-      </div>
-    </section>
-
-    <!-- Credentials -->
-    <section id="credentials">
-      <div class="container">
-        <h2 class="animate-on-scroll">Credentials &amp; Education</h2>
-        <div class="credentials-grid">
-          <div class="credential-group animate-on-scroll" data-delay="1">
-            <h3>Certifications</h3>
-            <div class="credential-item">
-              <span class="status-dot status-dot--progress" title="In Progress"></span>
-              <div class="credential-info">
-                <span class="credential-name">IAPP AIGP<span class="credential-tag">In Progress</span></span>
-                <p class="credential-detail">Artificial Intelligence Governance Professional</p>
-              </div>
+            <div>
+              <h3><a href="posts/template.html">Coming Soon: Lessons from Using AI Tools in Production</a></h3>
+              <p class="writing-excerpt">A practical look at the governance questions that appear when AI coding tools
+                become part of real development workflows.</p>
             </div>
-            <div class="credential-item">
-              <span class="status-dot status-dot--progress" title="In Progress"></span>
-              <div class="credential-info">
-                <span class="credential-name">CompTIA Security+<span class="credential-tag">In Progress</span></span>
-                <p class="credential-detail">Foundational cybersecurity certification</p>
-              </div>
-            </div>
-          </div>
-          <div class="credential-group animate-on-scroll" data-delay="2">
-            <h3>Education</h3>
-            <div class="credential-item">
-              <span class="status-dot status-dot--progress" title="In Progress"></span>
-              <div class="credential-info">
-                <span class="credential-name">B.S. Cybersecurity</span>
-                <p class="credential-detail">Brigham Young University — Expected Spring 2028</p>
-                <p class="credential-detail">Coursework: Network Security, Web Security, Cybersecurity Ethics, Core Cybersecurity Concepts</p>
-              </div>
-            </div>
-          </div>
-          <div class="credential-group animate-on-scroll" data-delay="3">
-            <h3>Work Experience</h3>
-            <div class="credential-item">
-              <span class="status-dot status-dot--earned" title="Current"></span>
-              <div class="credential-info">
-                <span class="credential-name">Junior Developer — Simplicity Group<span class="credential-tag">Current</span></span>
-                <p class="credential-detail">June 2025 — Present</p>
-                <p class="credential-detail">Building production web applications with AI-assisted development tools. Daily hands-on experience with AI coding workflows, code review processes, and the governance questions that emerge when teams integrate AI into real development pipelines.</p>
-              </div>
-            </div>
-          </div>
-          <div class="credential-group animate-on-scroll" data-delay="4">
-            <h3>Competitions &amp; Activities</h3>
-            <div class="credential-item">
-              <span class="status-dot status-dot--upcoming" title="Upcoming"></span>
-              <div class="credential-info">
-                <span class="credential-name">Cyber 9/12 Strategy Challenge<span class="credential-tag">Upcoming</span></span>
-                <p class="credential-detail">National cybersecurity policy competition</p>
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="animate-on-scroll">Connect</h2>
-        <p class="animate-on-scroll" data-delay="1">Open to opportunities in AI governance, cybersecurity GRC, and risk consulting. Always happy to connect.</p>
-        <div class="contact-links animate-on-scroll" data-delay="2">
+    <section class="site-section" id="contact">
+      <div class="container contact-panel">
+        <div class="animate-on-scroll">
+          <p class="section-kicker">Contact</p>
+          <p>Open to conversations about AI governance, cybersecurity GRC, responsible development, and early-career
+            opportunities in risk consulting.</p>
+        </div>
+        <div class="contact-links animate-on-scroll">
           <a href="mailto:noah.airmet@icloud.com" class="contact-link">Email</a>
-          <a href="https://www.linkedin.com/in/noah-airmet-165669333/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
-          <a href="https://github.com/Noah-Airmet" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
-          <a href="assets/resume.pdf" class="contact-link" aria-label="Download resume">Resume</a>
+          <a href="https://github.com/Noah-Airmet" class="contact-link" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+          <a href="assets/resume.pdf" class="contact-link">Resume</a>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- shared-footer:start -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 Noah. Built by Claude Opus 4.6 and Noah.</p>
+      <p>&copy; 2026 Noah Airmet</p>
     </div>
   </footer>
+  <!-- shared-footer:end -->
 
-  <script src="js/cursor-trace.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
