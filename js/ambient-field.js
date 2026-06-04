@@ -23,6 +23,8 @@
   var points = [];
   var raf = 0;
   var needsFrame = false;
+  var presence = 0;
+  var motion = 0;
   var pointer = {
     active: false,
     x: -1000,
@@ -100,9 +102,11 @@
     if (pointer.lastMove) {
       pointer.vx = pointer.x - pointer.lastX;
       pointer.vy = pointer.y - pointer.lastY;
+      motion = Math.min(1, motion + Math.min(1, Math.hypot(pointer.vx, pointer.vy) / 32) * 0.45 + 0.04);
     } else {
       pointer.sx = pointer.x;
       pointer.sy = pointer.y;
+      motion = 0.18;
     }
 
     pointer.lastX = pointer.x;
@@ -119,17 +123,16 @@
   function draw(maxEnergy) {
     ctx.clearRect(0, 0, width, height);
 
-    if (maxEnergy < 0.01 && !pointer.active) return;
+    if (maxEnergy < 0.01 && presence < 0.01) return;
 
     var now = performance.now();
-    var age = now - pointer.lastMove;
-    var pointerGlow = pointer.active && age < 850 ? Math.max(0, 1 - age / 850) : 0;
+    var pointerGlow = presence;
     var gradient = null;
 
     if (pointerGlow > 0) {
-      gradient = ctx.createRadialGradient(pointer.sx, pointer.sy, 0, pointer.sx, pointer.sy, 260);
-      gradient.addColorStop(0, 'rgba(40, 111, 108, ' + (0.082 * pointerGlow).toFixed(3) + ')');
-      gradient.addColorStop(0.42, 'rgba(40, 111, 108, ' + (0.032 * pointerGlow).toFixed(3) + ')');
+      gradient = ctx.createRadialGradient(pointer.sx, pointer.sy, 0, pointer.sx, pointer.sy, 340);
+      gradient.addColorStop(0, 'rgba(40, 111, 108, ' + (0.115 * pointerGlow).toFixed(3) + ')');
+      gradient.addColorStop(0.42, 'rgba(40, 111, 108, ' + (0.045 * pointerGlow).toFixed(3) + ')');
       gradient.addColorStop(1, 'rgba(40, 111, 108, 0)');
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
@@ -142,14 +145,14 @@
       var pdx = p.x - pointer.sx;
       var pdy = p.y - pointer.sy;
       var pointerDistance = Math.hypot(pdx, pdy);
-      var nearPointer = pointerGlow > 0 && pointerDistance < 260
-        ? Math.pow(1 - pointerDistance / 260, 2) * pointerGlow
+      var nearPointer = pointerGlow > 0 && pointerDistance < 330
+        ? Math.pow(1 - pointerDistance / 330, 2) * pointerGlow
         : 0;
       var energy = Math.min(1, Math.hypot(dx, dy) / 28);
       var pulse = 0.55 + Math.sin(now * 0.0014 + p.phase) * 0.45;
-      var alpha = energy * 0.09 + nearPointer * (0.026 + pulse * 0.026);
+      var alpha = energy * 0.1 + nearPointer * (0.035 + pulse * 0.032);
 
-      if (alpha < 0.006 && energy < 0.08) continue;
+      if (alpha < 0.004 && energy < 0.08) continue;
 
       if (energy > 0.08) {
         ctx.beginPath();
@@ -161,7 +164,7 @@
       }
 
       ctx.beginPath();
-      ctx.arc(p.x, p.y, 0.85 + energy * 0.9 + nearPointer * 0.45, 0, Math.PI * 2);
+      ctx.arc(p.x, p.y, 0.95 + energy * 0.9 + nearPointer * 0.55, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(23, 32, 51, ' + alpha.toFixed(3) + ')';
       ctx.fill();
     }
@@ -170,12 +173,15 @@
   function tick() {
     raf = 0;
 
-    pointer.sx += (pointer.x - pointer.sx) * 0.16;
-    pointer.sy += (pointer.y - pointer.sy) * 0.16;
+    var targetPresence = pointer.active ? 1 : 0;
+    var presenceEase = targetPresence > presence ? 0.075 : 0.045;
+    presence += (targetPresence - presence) * presenceEase;
+    canvas.dataset.presence = presence.toFixed(3);
 
-    var now = performance.now();
-    var age = now - pointer.lastMove;
-    var influence = pointer.active && age < 1200 ? Math.max(0, 1 - age / 1200) : 0;
+    pointer.sx += (pointer.x - pointer.sx) * 0.14;
+    pointer.sy += (pointer.y - pointer.sy) * 0.14;
+
+    var influence = pointer.active ? motion : 0;
     var speed = Math.min(42, Math.hypot(pointer.vx, pointer.vy));
     var radius = 150 + speed * 2.2;
     var maxEnergy = 0;
@@ -214,8 +220,12 @@
 
     pointer.vx *= 0.74;
     pointer.vy *= 0.74;
+    motion *= 0.9;
 
-    if (needsFrame || influence > 0 || maxEnergy > 0.012) {
+    var cursorStillSettling = Math.abs(pointer.x - pointer.sx) + Math.abs(pointer.y - pointer.sy) > 0.35;
+    var presenceStillSettling = Math.abs(targetPresence - presence) > 0.005;
+
+    if (needsFrame || cursorStillSettling || presenceStillSettling || motion > 0.01 || maxEnergy > 0.012) {
       needsFrame = false;
       schedule();
     }
