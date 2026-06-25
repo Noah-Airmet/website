@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Becoming Like God | Noah Airmet</title>
+  <meta name="description"
+    content="A beginner-friendly guide to the development of early Latter-day Saint teachings about exaltation and becoming like God.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=20260604-field2">
+  <style>
+    .guide {
+      padding: var(--space-6) 0 var(--space-7);
+    }
+
+    .guide__intro {
+      max-width: 54rem;
+    }
+
+    .guide__intro h1 {
+      margin-bottom: var(--space-3);
+    }
+
+    .guide__lede {
+      color: var(--color-muted);
+      font-size: var(--step-1);
+    }
+
+    .guide__callout {
+      margin-top: var(--space-5);
+      padding: var(--space-4);
+      border: 1px solid var(--color-line);
+      border-left: 5px solid var(--color-accent);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.68);
+      color: var(--color-ink);
+      font-size: var(--step-1);
+    }
+
+    .guide__rules {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
+
+    .guide__rule,
+    .guide__box,
+    .guide__concept {
+      border: 1px solid var(--color-line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .guide__rule {
+      padding: var(--space-3);
+    }
+
+    .guide__rule strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: var(--color-ink);
+    }
+
+    .guide__section {
+      margin-top: var(--space-7);
+    }
+
+    .guide__section h2 {
+      margin-bottom: var(--space-4);
+    }
+
+    .guide__timeline {
+      display: grid;
+      grid-template-columns: 7rem minmax(0, 1fr);
+      gap: 0 var(--space-4);
+    }
+
+    .guide__time {
+      position: relative;
+      padding: var(--space-4) 0;
+      border-right: 2px solid var(--color-line);
+      color: var(--color-accent);
+      font-family: var(--font-body);
+      font-weight: 800;
+    }
+
+    .guide__time::after {
+      content: "";
+      position: absolute;
+      top: 1.7rem;
+      right: -0.42rem;
+      width: 0.72rem;
+      height: 0.72rem;
+      border: 2px solid var(--color-bg);
+      border-radius: 999px;
+      background: var(--color-accent);
+      box-shadow: 0 0 0 1px var(--color-line);
+    }
+
+    .guide__event {
+      padding: var(--space-4) 0;
+    }
+
+    .guide__event-title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      align-items: center;
+      margin-bottom: var(--space-2);
+    }
+
+    .guide__event-title h3 {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--step-1);
+      font-weight: 800;
+    }
+
+    .guide__badge {
+      display: inline-block;
+      padding: 0.15rem 0.45rem;
+      border-radius: 6px;
+      background: var(--color-accent);
+      color: var(--color-bg);
+      font-size: var(--step--1);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .guide__badge--canon {
+      background: #4f704f;
+    }
+
+    .guide__badge--sermon {
+      background: #8a6a22;
+    }
+
+    .guide__badge--later {
+      background: #66517f;
+    }
+
+    .guide__badge--caution {
+      background: #8a3d3d;
+    }
+
+    .guide__boxes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+
+    .guide__box {
+      padding: var(--space-3);
+    }
+
+    .guide__box h4,
+    .guide__concept-label {
+      margin: 0 0 0.4rem;
+      color: var(--color-muted);
+      font-family: var(--font-body);
+      font-size: var(--step--1);
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .guide__box--actual {
+      border-left: 5px solid #4f704f;
+    }
+
+    .guide__box--notyet {
+      border-left: 5px solid #8a3d3d;
+    }
+
+    .guide__box--step {
+      border-left: 5px solid var(--color-accent);
+    }
+
+    .guide__concept-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
+    }
+
+    .guide__concept {
+      padding: var(--space-3);
+    }
+
+    .guide__concept h3 {
+      margin-bottom: var(--space-1);
+      font-family: var(--font-body);
+      font-size: var(--step-1);
+      font-weight: 800;
+    }
+
+    .guide__thesis {
+      max-width: 58rem;
+      padding: var(--space-4);
+      border: 1px solid var(--color-line);
+      border-radius: 8px;
+      background: rgba(243, 240, 234, 0.55);
+      font-size: var(--step-1);
+    }
+
+    .guide__qa {
+      max-width: 58rem;
+      border-top: 1px solid var(--color-line);
+      padding: var(--space-3) 0;
+    }
+
+    .guide__qa:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .guide__qa h3 {
+      margin-bottom: var(--space-1);
+      font-family: var(--font-body);
+      font-size: var(--step-1);
+      font-weight: 800;
+    }
+
+    .guide__sources {
+      columns: 2;
+      column-gap: var(--space-5);
+      max-width: 62rem;
+      padding-left: 1.1rem;
+      color: var(--color-muted);
+      font-size: var(--step--1);
+    }
+
+    .guide__sources li {
+      break-inside: avoid;
+      margin-bottom: var(--space-2);
+    }
+
+    @media (max-width: 860px) {
+      .guide__rules,
+      .guide__boxes,
+      .guide__concept-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide__timeline {
+        grid-template-columns: 5rem minmax(0, 1fr);
+        gap: 0 var(--space-3);
+      }
+
+      .guide__sources {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <!-- shared-nav:start -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">noahairmet.com</a>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="../blog.html">Writing</a>
+          <a href="../commitments.html">Commitments</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- shared-nav:end -->
+
+  <main class="guide">
+    <section class="container guide__intro">
+      <p class="section-kicker">Latter-day Saint theology</p>
+      <h1>Becoming Like God</h1>
+      <p class="guide__lede">A beginner-friendly guide to what was actually taught, when it was taught, and how early
+        Latter-day Saint ideas about exaltation developed from D&amp;C 76 to D&amp;C 132, King Follett, the Sermon in
+        the Grove, Brigham Young, and beyond.</p>
+
+      <div class="guide__callout">
+        <strong>The short version:</strong> Early Latter-day Saint teaching about exaltation developed in stages. D&amp;C
+        76 teaches that the exalted become "gods" as children and heirs of God. D&amp;C 132 ties godhood to sealing,
+        eternal marriage, and "continuation of the seeds." King Follett teaches that God himself progressed to godhood
+        and that human spirits/intelligences are uncreated. The Sermon in the Grove most clearly extends this upward
+        into a chain or hierarchy of divine beings. Brigham Young, Orson Pratt, and later writers then systematized
+        heavenly parents, spirit birth, and eternal increase.
+      </div>
+
+      <div class="guide__rules" aria-label="How to read the sources">
+        <div class="guide__rule">
+          <strong>Canon first</strong>
+          <span>D&amp;C 76, 93, and 132 are scripture for Latter-day Saints.</span>
+        </div>
+        <div class="guide__rule">
+          <strong>Sermons second</strong>
+          <span>King Follett and the Sermon in the Grove are Joseph Smith sermons, influential but not canon.</span>
+        </div>
+        <div class="guide__rule">
+          <strong>Later theology third</strong>
+          <span>Brigham Young, the Pratts, and Roberts explain and expand; they are not all saying the same thing.</span>
+        </div>
+        <div class="guide__rule">
+          <strong>Mechanics are open</strong>
+          <span>Modern official teaching affirms divine potential and heavenly parents but avoids many old speculative
+            details.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container guide__section" aria-labelledby="timeline-title">
+      <h2 id="timeline-title">Development Timeline</h2>
+
+      <div class="guide__timeline">
+        <div class="guide__time">1832</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>D&amp;C 76: Deification as Inheritance</h3>
+            <span class="guide__badge guide__badge--canon">canon</span>
+          </div>
+          <p>D&amp;C 76 is the first major Restoration text to describe exalted people in divine terms. Those who receive
+            the celestial fullness are called "gods, even the sons of God." They receive all things, dwell with God and
+            Christ, and are made equal in power, might, and dominion.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>Exalted humans inherit divine glory as children and heirs of God through Christ.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Does not yet teach</h4>
+              <p>Eternal marriage, heavenly parents, spirit birth, or an infinite regress of gods.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>The basic deification claim is already present early: salvation's highest form is becoming like God,
+                not merely living near God.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">1833</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>D&amp;C 93: The Uncreated Intelligence Constraint</h3>
+            <span class="guide__badge guide__badge--canon">canon</span>
+          </div>
+          <p>D&amp;C 93 says intelligence "was not created or made, neither indeed can be." This becomes important later
+            because it limits how literally one can say God or exalted beings "create" human spirits.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>Something fundamental about human beings is eternal and uncreated.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Does not yet teach</h4>
+              <p>A detailed model of intelligence, spirit body, birth, or premortal embodiment.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>This creates the later problem: if spirits are uncreated, what does "spirit birth" mean?</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">1843</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>D&amp;C 132: Exaltation as Sealed, Eternal Increase</h3>
+            <span class="guide__badge guide__badge--canon">canon</span>
+          </div>
+          <p>D&amp;C 132 ties exaltation to covenant sealing. A marriage sealed by proper authority and ratified by the
+            Holy Spirit of promise can remain after death. The exalted receive "a continuation of the seeds forever and
+            ever"; then "shall they be gods" because they "continue."</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>Godhood is connected to sealing, eternal marriage, and continuing posterity or increase.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Does not yet clearly teach</h4>
+              <p>That exalted couples literally create spirit children, own worlds, or stand in an infinite backward
+                chain of gods.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>The doctrine moves from divine inheritance to generative divine family life. D&amp;C 132 is the hinge
+                text.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">Apr 1844</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>King Follett Discourse: Godhood as Progression</h3>
+            <span class="guide__badge guide__badge--sermon">Joseph sermon</span>
+          </div>
+          <p>In the King Follett discourse, Joseph Smith teaches that God was once as humans are now and that humans
+            must learn how to become gods. He also teaches that the human spirit or intelligence is not created and has
+            no beginning.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>Godhood is not only an inherited status; it is a path of progression. God himself has traversed that
+                path.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Does not directly connect</h4>
+              <p>It does not use D&amp;C 132 to explain plural marriage or give a full spirit-birth system.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>It radicalizes the doctrine: humans become like God because God was once like humans.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">Jun 1844</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>Sermon in the Grove: Plurality and Upward Chain</h3>
+            <span class="guide__badge guide__badge--sermon">Joseph sermon</span>
+          </div>
+          <p>In Joseph Smith's final major public doctrinal sermon, he argues for a plurality of gods. He reasons that
+            if Jesus has a Father, the Father may also have a Father, and that intelligences exist one above another
+            with no end.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>The clearest Joseph Smith source for a hierarchy or chain of divine beings above the Father.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Still not fully systematized</h4>
+              <p>It does not explain the mechanics of heavenly reproduction or reconcile them with uncreated
+                intelligence.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>The "infinite regress" idea is much stronger here than in D&amp;C 132 or even King Follett.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">1845-1890</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>Young, the Pratts, Snow, and Phelps: Heavenly Parents and Spirit Birth</h3>
+            <span class="guide__badge guide__badge--later">later development</span>
+          </div>
+          <p>After Joseph Smith's death, Latter-day Saint thinkers increasingly connected exaltation, heavenly parents,
+            plural marriage, and eternal procreation. Eliza R. Snow's "O My Father" gave beloved poetic form to Heavenly
+            Mother. Orson and Parley Pratt and Brigham Young developed more explicit models in which exalted parents
+            have spirit children and continue divine family work.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>A fuller spirit-birth and eternal-procreation theology appears in the post-Joseph polygamy era.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Not all equal authority</h4>
+              <p>These teachings are historically important but not identical to canon; some were speculative or later
+                deemphasized.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>This is where "continuation of seeds" is commonly read as literal heavenly parenthood of spirit
+                children.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">1900s</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>B. H. Roberts: The Tripartite Reconciliation</h3>
+            <span class="guide__badge guide__badge--later">system building</span>
+          </div>
+          <p>B. H. Roberts tries to reconcile Joseph's uncreated-spirit teaching with later spirit-birth theology. His
+            solution distinguishes three stages: uncreated intelligence, spirit embodiment or spirit birth, and mortal
+            embodiment.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>Spirit birth does not create the eternal self; it clothes or organizes an eternal intelligence into
+                spirit embodiment.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Not canonized</h4>
+              <p>Roberts's model became influential, but it is a later theological synthesis, not an explicit scriptural
+                explanation.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>Roberts shows that earlier teachings had generated a real metaphysical problem that required careful
+                reconciliation.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="guide__time">Today</div>
+        <article class="guide__event">
+          <div class="guide__event-title">
+            <h3>Modern Official Framing: Divine Potential, Fewer Mechanics</h3>
+            <span class="guide__badge guide__badge--caution">current caution</span>
+          </div>
+          <p>Modern Church materials clearly teach that human beings are spirit children of heavenly parents and can
+            become like Heavenly Father through Christ. They generally do not emphasize older speculative details about
+            divine polygamy, spirit gestation, ownership of worlds, or the exact mechanics of infinite regress.</p>
+          <div class="guide__boxes">
+            <div class="guide__box guide__box--actual">
+              <h4>Actually teaches</h4>
+              <p>Divine parentage, divine potential, exaltation, and becoming like God.</p>
+            </div>
+            <div class="guide__box guide__box--notyet">
+              <h4>Usually not specified</h4>
+              <p>How spirit birth works, whether there is a literal infinite regress, and what exalted beings do in
+                cosmic detail.</p>
+            </div>
+            <div class="guide__box guide__box--step">
+              <h4>Development step</h4>
+              <p>The modern public emphasis is devotional and relational more than speculative and cosmological.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container guide__section" aria-labelledby="conflated-title">
+      <h2 id="conflated-title">What Often Gets Conflated</h2>
+      <div class="guide__concept-grid">
+        <article class="guide__concept">
+          <p class="guide__concept-label">D&amp;C 76</p>
+          <h3>Becoming gods</h3>
+          <p>Early and scriptural. The exalted inherit divine glory as children of God and joint-heirs with Christ.</p>
+        </article>
+        <article class="guide__concept">
+          <p class="guide__concept-label">D&amp;C 132</p>
+          <h3>Eternal increase</h3>
+          <p>Scriptural, but underdetermined. It teaches "continuation of the seeds"; it does not spell out the
+            biological or metaphysical mechanism.</p>
+        </article>
+        <article class="guide__concept">
+          <p class="guide__concept-label">KFD / SitG</p>
+          <h3>God progressed; gods above gods</h3>
+          <p>Joseph Smith sermon material, not canon. King Follett teaches God's progression; Sermon in the Grove gives
+            the clearest upward-chain logic.</p>
+        </article>
+        <article class="guide__concept">
+          <p class="guide__concept-label">Young / Pratt / Roberts</p>
+          <h3>Spirit birth and system building</h3>
+          <p>Post-Joseph theology supplies the fuller heavenly-parent mechanism and later attempts to harmonize it with
+            uncreated intelligence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container guide__section" aria-labelledby="thesis-title">
+      <h2 id="thesis-title">The Cleanest Thesis</h2>
+      <p class="guide__thesis"><strong>Early Latter-day Saint deification theology was not revealed all at once.</strong>
+        D&amp;C 76 teaches that the exalted become gods as heirs of God through Christ. D&amp;C 132 adds sealing,
+        eternal marriage, and continuing posterity as the meaning of exalted godhood. King Follett then teaches that God
+        himself progressed to godhood and that human spirits are uncreated. The Sermon in the Grove most clearly teaches
+        a plurality or chain of gods. After Joseph's death, Brigham Young, the Pratts, Eliza R. Snow, W. W. Phelps, and
+        later B. H. Roberts developed the fuller heavenly-parent and spirit-birth system many Latter-day Saints
+        inherited.</p>
+    </section>
+
+    <section class="container guide__section" aria-labelledby="qa-title">
+      <h2 id="qa-title">Beginner Q&amp;A</h2>
+      <article class="guide__qa">
+        <h3>Does D&amp;C 76 already teach that humans can become gods?</h3>
+        <p>Yes. It is one of the earliest and clearest scriptural texts for exalted humans being called gods. But it
+          frames that godhood as inheritance through Christ, not as eternal marriage or spirit birth.</p>
+      </article>
+      <article class="guide__qa">
+        <h3>Does D&amp;C 132 teach infinite regress?</h3>
+        <p>Not by itself. It teaches godhood and eternal increase. The strongest textual meaning is continuing Abrahamic
+          posterity through sealing. Infinite regress becomes much clearer in the Sermon in the Grove.</p>
+      </article>
+      <article class="guide__qa">
+        <h3>Does "continuation of the seeds" mean only living forever with your current family?</h3>
+        <p>Probably not. The language of seed, continuation, enlargement, and Abrahamic posterity points to ongoing
+          increase, not just preservation of a fixed family circle.</p>
+      </article>
+      <article class="guide__qa">
+        <h3>Does "continuation of the seeds" clearly mean literal spirit birth?</h3>
+        <p>No. That became a major later interpretation, especially in Utah-era theology, but D&amp;C 132 itself does not
+          explain the mechanics.</p>
+      </article>
+      <article class="guide__qa">
+        <h3>Why does B. H. Roberts matter?</h3>
+        <p>Because he saw the conflict between two inherited claims: human spirits/intelligences are uncreated, yet
+          exalted parents have spirit children. His tripartite model tries to say spirit birth gives embodiment to an
+          eternal intelligence rather than creating a new self from nothing.</p>
+      </article>
+    </section>
+
+    <section class="container guide__section" aria-labelledby="sources-title">
+      <h2 id="sources-title">Source Trail</h2>
+      <ul class="guide__sources">
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/76?lang=eng">Doctrine and
+            Covenants 76</a>: celestial heirs, gods, sons of God, divine inheritance.</li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/93?lang=eng">Doctrine and
+            Covenants 93</a>: intelligence not created or made.</li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/132?lang=eng">Doctrine and
+            Covenants 132</a>: sealing, eternal marriage, continuation of seeds, becoming gods.</li>
+        <li><a href="https://www.josephsmithpapers.org/site/accounts-of-the-king-follett-sermon">Joseph Smith Papers:
+            King Follett accounts</a>: source witnesses for the April 1844 sermon.</li>
+        <li><a href="https://www.josephsmithpapers.org/paper-summary/discourse-7-april-1844-as-published-in-times-and-seasons/3">King
+            Follett, Times and Seasons text</a>: God once as humans are; humans learn to become gods.</li>
+        <li><a href="https://www.josephsmithpapers.org/paper-summary/discourse-16-june-1844-a-as-reported-by-thomas-bullock/3">Sermon
+            in the Grove, Bullock report</a>: plurality of gods and intelligences one above another.</li>
+        <li><a href="https://rsc.byu.edu/words-joseph-smith/16-june-1844-1-sunday-morning-grove-east-temple">Words of
+            Joseph Smith: Sermon in the Grove</a>: accessible transcription with notes.</li>
+        <li><a href="https://fromthedesk.org/king-follett-sermon-a-biography/">William V. Smith interview</a>:
+          development of KFD reception, spirit birth, and Roberts's model.</li>
+        <li><a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/journal-of-discourses?lang=eng">Journal
+            of Discourses official note</a>: historically useful, not an official Church publication.</li>
+        <li><a href="https://journalofdiscourses.com/13/22">Orson Pratt, "Celestial Marriage"</a>: later polygamy-era
+          exposition of angels, gods, and eternal increase.</li>
+        <li><a href="https://scripturecentral.org/archive/books/book/the-truththewaythelifeanelementarytreatiseontheology">B.
+            H. Roberts, The Truth, The Way, The Life</a>: later systematic theology and contested reception.</li>
+        <li><a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/becoming-like-god?lang=eng">Gospel
+            Topics: Becoming Like God</a>: current official framing.</li>
+        <li><a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/mother-in-heaven?lang=eng">Gospel
+            Topics Essay: Mother in Heaven</a>: heavenly parents and spirit children.</li>
+        <li><a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/heavenly-parents?lang=eng">Gospel
+            Topics: Heavenly Parents</a>: modern concise statement.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- shared-footer:start -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Noah Airmet</p>
+    </div>
+  </footer>
+  <!-- shared-footer:end -->
+
+  <script src="../js/main.js"></script>
+  <script src="../js/ambient-field.js?v=20260604-field2"></script>
+</body>
+
+</html>
