@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulpit — Help build the complete library of General Conference</title>
+  <meta name="description" content="A friends-only project to gather every General Conference talk in Church history into one meticulously sourced, AI-readable library. Here's how you can help.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260604-field2">
+  <style>
+    /* ---- Pulpit page (scoped) ---- */
+    .pulpit{--p-ink:#172033;--p-text:#30343c;--p-muted:#68707d;--p-accent:#286f6c;
+      --p-gold:#a9803f;--p-bg:#fbfaf7;--p-surface:#fff;--p-line:rgba(23,32,51,.12);}
+    .pulpit{color:var(--p-text);font-family:"Source Sans 3",Arial,sans-serif;line-height:1.6}
+    .pulpit .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+    .pulpit h1,.pulpit h2,.pulpit h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--p-ink);font-weight:600;line-height:1.15}
+
+    /* hero */
+    .p-hero{background:linear-gradient(168deg,#1c2c3a 0%,#24403d 100%);color:#eef2ee;padding:74px 22px 60px;
+      border-bottom:3px solid var(--p-gold);text-align:center}
+    .p-hero .eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;
+      color:#9db8a8;margin:0 0 16px}
+    .p-hero h1{font-size:clamp(34px,6vw,54px);margin:0 auto 16px;max-width:13ch;color:#fff;font-weight:600}
+    .p-hero p{font-size:clamp(17px,2.4vw,20px);color:#cdd8cf;max-width:560px;margin:0 auto;font-weight:400}
+
+    .pulpit section{padding:46px 0}
+    .pulpit section + section{border-top:1px solid var(--p-line)}
+    .pulpit .eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;
+      color:var(--p-accent);margin:0 0 10px}
+    .pulpit h2{font-size:clamp(26px,4vw,36px);margin:0 0 14px}
+    .pulpit p.lede{font-size:19px;color:var(--p-text)}
+    .pulpit p{font-size:17px}
+    .pulpit strong{color:var(--p-ink)}
+
+    /* problem/solution two-up */
+    .p-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+    .p-card{background:var(--p-surface);border:1px solid var(--p-line);border-radius:12px;padding:22px}
+    .p-card h3{font-size:22px;margin:0 0 8px}
+    .p-card.problem h3{color:#9a4a3c}
+    .p-card.solution h3{color:var(--p-accent)}
+    .p-card p{font-size:15.5px;margin:0;color:var(--p-muted)}
+    .p-card ul{margin:8px 0 0;padding-left:18px;font-size:15px;color:var(--p-muted)}
+    .p-card li{margin:4px 0}
+
+    /* AI demo */
+    .p-demo{background:#11202c;border-radius:14px;padding:24px;margin-top:22px;color:#dbe5dd}
+    .p-demo .row{display:flex;gap:12px;margin:0 0 16px}
+    .p-demo .row:last-child{margin-bottom:0}
+    .p-demo .who{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;
+      flex:0 0 64px;padding-top:3px;color:#7e9b8a}
+    .p-demo .bubble{flex:1;font-size:15.5px;line-height:1.55}
+    .p-demo .you .bubble{color:#fff}
+    .p-demo .ai .bubble{color:#bfd0c4}
+    .p-demo .ai .bubble em{color:#e7c98a;font-style:normal}
+    .p-demo .src{font-family:"JetBrains Mono",monospace;font-size:12px;color:#6f8a79;display:block;margin-top:6px}
+
+    /* grade ladder */
+    .p-grades{margin-top:22px;display:flex;flex-direction:column;gap:8px}
+    .p-grade{display:flex;align-items:center;gap:14px;background:var(--p-surface);border:1px solid var(--p-line);
+      border-radius:10px;padding:11px 16px}
+    .p-grade .dot{width:12px;height:12px;border-radius:50%;flex:0 0 12px}
+    .p-grade b{font-size:15.5px;color:var(--p-ink);flex:0 0 168px}
+    .p-grade span{font-size:14.5px;color:var(--p-muted)}
+    @media(max-width:520px){.p-grade{flex-wrap:wrap}.p-grade b{flex-basis:auto}}
+
+    /* steps */
+    .p-steps{counter-reset:step;margin-top:24px;display:grid;gap:16px}
+    .p-step{display:flex;gap:18px;align-items:flex-start;background:var(--p-surface);border:1px solid var(--p-line);
+      border-radius:12px;padding:20px 22px}
+    .p-step::before{counter-increment:step;content:counter(step);font-family:"Cormorant Garamond",serif;font-weight:600;
+      font-size:30px;color:#fff;background:var(--p-accent);width:46px;height:46px;border-radius:50%;flex:0 0 46px;
+      display:flex;align-items:center;justify-content:center;line-height:1}
+    .p-step h3{font-size:20px;margin:2px 0 5px}
+    .p-step p{font-size:15.5px;margin:0;color:var(--p-muted)}
+
+    .p-need{background:var(--p-accent-soft,rgba(40,111,108,.08));border:1px solid rgba(40,111,108,.2);
+      border-radius:12px;padding:20px 24px;margin-top:24px}
+    .p-need h3{font-size:20px;margin:0 0 8px;color:var(--p-accent)}
+    .p-need ul{margin:0;padding-left:20px}
+    .p-need li{margin:5px 0;font-size:16px}
+
+    /* CTA */
+    .p-cta{text-align:center;padding:56px 22px}
+    .p-cta h2{margin-bottom:10px}
+    .p-cta p{max-width:480px;margin:0 auto 26px;color:var(--p-muted)}
+    .p-btn{display:inline-block;background:var(--p-accent);color:#fff;text-decoration:none;font-weight:600;
+      font-size:17px;padding:14px 30px;border-radius:10px;transition:transform .15s,background .15s}
+    .p-btn:hover{background:#1f5856;transform:translateY(-1px)}
+    .p-cta .alt{display:block;margin-top:16px;font-size:14.5px;color:var(--p-muted)}
+    .p-cta .alt a{color:var(--p-accent)}
+
+    .p-note{font-size:13.5px;color:var(--p-muted);text-align:center;max-width:560px;margin:8px auto 0;font-style:italic}
+    @media(max-width:600px){.p-cards{grid-template-columns:1fr}}
+  </style>
+</head>
+
+<body>
+
+  <!-- shared-nav:start -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <a href="index.html" class="nav-logo">noahairmet.com</a>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="blog.html">Writing</a>
+          <a href="commitments.html">Commitments</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- shared-nav:end -->
+
+  <main class="pulpit">
+
+    <!-- HERO -->
+    <div class="p-hero">
+      <p class="eyebrow">A friends-only project · Pulpit</p>
+      <h1>Every General Conference talk, in one place.</h1>
+      <p>From 1830 to today — gathered, sourced to the oldest copy we can find, and made readable by both people and their AI. I could use your help.</p>
+    </div>
+
+    <!-- THE GAP -->
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Why this doesn't exist yet</p>
+        <h2>The talks are scattered everywhere.</h2>
+        <p class="lede">The Church's website only goes back to 1971. Everything before that is spread across old scanned <em>Conference Reports</em>, the <em>Journal of Discourses</em>, the Joseph Smith Papers, old Deseret News pages, and library archives — mixed in with mountains of other material. There is no single, trustworthy place to read it all.</p>
+        <div class="p-cards">
+          <div class="p-card problem">
+            <h3>The mess today</h3>
+            <ul>
+              <li>Modern talks: easy.</li>
+              <li>1942–1970: one paywalled-ish index.</li>
+              <li>Before 1942: scattered scans, no good search.</li>
+              <li>1830s–1890s: buried in giant old volumes.</li>
+            </ul>
+          </div>
+          <div class="p-card solution">
+            <h3>What we're building</h3>
+            <ul>
+              <li>One library, every talk.</li>
+              <li>Each one traced to its best, oldest source.</li>
+              <li>A quality grade on every transcript.</li>
+              <li>Readable by you <em>and</em> your AI.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE COOL PART -->
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">The part I'm genuinely excited about</p>
+        <h2>You can point your own AI at the whole thing.</h2>
+        <p>This isn't another chatbot that makes things up. We're storing every talk as a clean, plain text file with its source attached — the format AI assistants read best. Then we plug your AI (ChatGPT, Claude, Gemini — whatever you use) <strong>directly into the library</strong>. It reads the <em>real</em> talks, finds what you're looking for across 170 years, and shows you exactly where each quote came from.</p>
+
+        <div class="p-demo">
+          <div class="row you">
+            <div class="who">You</div>
+            <div class="bubble">"Find every conference talk that teaches that we'll go on to have spirit children of our own — and give me the oldest source for each."</div>
+          </div>
+          <div class="row ai">
+            <div class="who">Your AI</div>
+            <div class="bubble">Searches the whole library, reads the actual talks, and hands back the passages — each one quoted and <em>linked to the original scan or transcript, with a sourcing grade.</em>
+              <span class="src">↳ Orson Pratt, Apr 1873 · Journal of Discourses 16 · grade: Contemporaneous report</span>
+              <span class="src">↳ Spencer W. Kimball, Oct 1977 · churchofjesuschrist.org · grade: Verbatim</span>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:18px;color:var(--p-muted);font-size:15.5px">No special skills required — if you can chat with an AI, you can use it. The hard, careful part (the sourcing) is already baked in.</p>
+      </div>
+    </section>
+
+    <!-- GRADES -->
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Why people will trust it</p>
+        <h2>Every transcript gets a sourcing grade.</h2>
+        <p>The whole point is honesty about <em>how good our copy is</em>. Modern talks are word-perfect. A sermon from the 1850s, taken down in shorthand by a reporter, is not — and we say so, out loud, instead of pretending.</p>
+        <div class="p-grades">
+          <div class="p-grade"><span class="dot" style="background:#2e7d4f"></span><b>Verbatim</b><span>Official, word-for-word (modern era).</span></div>
+          <div class="p-grade"><span class="dot" style="background:#4f8a5c"></span><b>Authoritative print</b><span>As published in the official Conference Report.</span></div>
+          <div class="p-grade"><span class="dot" style="background:#a9803f"></span><b>Contemporaneous report</b><span>Taken down at the time — e.g. shorthand. Honest caveats attached.</span></div>
+          <div class="p-grade"><span class="dot" style="background:#b06a44"></span><b>Reconstructed</b><span>Assembled from more than one partial witness.</span></div>
+          <div class="p-grade"><span class="dot" style="background:#9a4a3c"></span><b>Fragmentary</b><span>Only pieces survive. Flagged clearly.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I NEED -->
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Where you come in</p>
+        <h2>What helping actually looks like.</h2>
+        <p class="lede">This is a big pile of talks and I can't do it alone. The good news: your AI does most of the grunt work, and you stay in the driver's seat. Three steps.</p>
+
+        <div class="p-steps">
+          <div class="p-step">
+            <div>
+              <h3>Claim a conference (or a decade you're curious about)</h3>
+              <p>You grab a chunk so two people don't duplicate work. I'll point you to exactly where those talks live — which scans, which volumes, which archive.</p>
+            </div>
+          </div>
+          <div class="p-step">
+            <div>
+              <h3>Let your AI do the heavy lifting — you check it</h3>
+              <p>Your AI pulls the old scan and cleans the text into a readable transcript. Your job is to glance it against the original and fix anything obviously wrong. Far faster than typing it out.</p>
+            </div>
+          </div>
+          <div class="p-step">
+            <div>
+              <h3>Submit it</h3>
+              <p>Send it my way. I give every talk a final review and assign its sourcing grade before it goes into the library. You get credit for the talks you bring in.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-need">
+          <h3>All you need</h3>
+          <ul>
+            <li>An AI assistant you're comfortable using (ChatGPT, Claude, Gemini — any).</li>
+            <li>A bit of interest in Church history. No coding, ever.</li>
+            <li>A few hours when you have them. An afternoon can net a whole conference.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="p-cta">
+      <h2>Want in?</h2>
+      <p>If this sounds fun, I'll get you set up with access and walk you through your first conference. No pressure, no commitment — just text or email me.</p>
+      <a class="p-btn" href="mailto:noah.airmet@icloud.com?subject=Pulpit%20%E2%80%94%20I%27d%20like%20to%20help&body=Hi%20Noah%2C%0A%0AI%27d%20love%20to%20help%20with%20the%20conference%20talk%20library.%0A%0AAn%20era%20or%20decade%20I%27m%20curious%20about%3A%20%0AThe%20AI%20I%20usually%20use%3A%20">Email Noah to help</a>
+      <span class="alt">Already approved? <a href="https://corpus.noahairmet.com">Sign in to the archive →</a></span>
+      <p class="p-note">A private research project for friends — not an official Church resource. Built with love for the sources.</p>
+    </div>
+
+  </main>
+
+  <!-- shared-footer:start -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Noah Airmet</p>
+    </div>
+  </footer>
+  <!-- shared-footer:end -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
