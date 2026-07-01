@@ -87,6 +87,8 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
 .dot.verify-partial{color:var(--pp-verify)}
 .dot.heavy-on{color:var(--pp-heavy)}
 .dot.heavy-partial{color:var(--pp-heavy)}
+.dot.audit-pass{color:var(--pp-verify)}
+.dot.audit-attention{color:var(--pp-progress)}
 .dot-legend{font-family:var(--font-mono);font-size:.66rem;color:var(--color-muted);padding:4px 4px 0}
 .ln-na-label{font-family:var(--font-mono);font-size:.72rem;color:var(--pp-na)}
 .ln-modern-label{font-family:var(--font-mono);font-size:.72rem;color:var(--pp-heavy)}
@@ -184,7 +186,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
       </div>
       <div class="pp-findwrap">
         <input id="pp-find" type="search" placeholder="Find a conference, claimant, or note…" autocomplete="off">
-        <span class="pp-finder-count" id="pp-find-count" data-default="Updated Jul 1, 2026, 4:27 PM MT">Updated Jul 1, 2026, 4:27 PM MT</span>
+        <span class="pp-finder-count" id="pp-find-count" data-default="Updated Jul 1, 2026, 4:30 PM MT">Updated Jul 1, 2026, 4:30 PM MT</span>
       </div>
     </div>
   </header>
@@ -912,7 +914,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-count"></span>
   </div></div>
   </details>
-      <div class="dot-legend">marks: imported · verified · heavyweight — ✓ all / ◑ partial / ○ none</div><div class="era-break" id="era-conference-reports">
+      <div class="dot-legend">marks: imported · verified · heavyweight · audited — ✓ all/pass / ◑ partial/attention / ○ none</div><div class="era-break" id="era-conference-reports">
       <div class="era-break-label">Conference Reports</div>
       <div class="era-break-meta">1897–1970 · Internet Archive scans · <b>5,612</b> talks · <b>141</b> imported · <b>2565</b> heavyweight · <b>0</b> open · <b>3</b> not held</div>
     </div>
@@ -920,7 +922,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1970 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1970-10.md">report</a></span>
@@ -928,7 +930,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1970 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-partial">◑</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-partial">◑</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1970-04.md">report</a></span>
@@ -936,7 +938,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1969 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1969-10.md">report</a></span>
@@ -944,7 +946,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1969 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1969-04.md">report</a></span>
@@ -952,7 +954,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1968 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1968-10.md">report</a></span>
@@ -960,7 +962,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1968 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1968-04.md">report</a></span>
@@ -968,7 +970,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1967 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1967-10.md">report</a></span>
@@ -976,7 +978,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1967 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1967-04.md">report</a></span>
@@ -984,7 +986,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1966 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1966-10.md">report</a></span>
@@ -992,7 +994,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1966 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1966-04.md">report</a></span>
@@ -1000,7 +1002,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1965 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1965-10.md">report</a></span>
@@ -1008,7 +1010,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1965 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1965-04.md">report</a></span>
@@ -1016,7 +1018,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1964 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1964-10.md">report</a></span>
@@ -1024,7 +1026,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1964 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1964-04.md">report</a></span>
@@ -1032,7 +1034,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1963 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1963-10.md">report</a></span>
@@ -1040,7 +1042,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1963 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1963-04.md">report</a></span>
@@ -1048,7 +1050,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1962 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1962-10.md">report</a></span>
@@ -1056,7 +1058,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1962 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1962-04.md">report</a></span>
@@ -1064,7 +1066,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1961 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1961-10.md">report</a></span>
@@ -1072,7 +1074,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1961 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1961-04.md">report</a></span>
@@ -1080,7 +1082,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1960 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1960-10.md">report</a></span>
@@ -1088,7 +1090,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1960 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1960-04.md">report</a></span>
@@ -1096,7 +1098,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1959 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1959-10.md">report</a></span>
@@ -1104,7 +1106,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1959 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1959-04.md">report</a></span>
@@ -1112,7 +1114,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1958 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1958-10.md">report</a></span>
@@ -1120,7 +1122,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1958 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1958-04.md">report</a></span>
@@ -1134,7 +1136,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1957 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1957-04.md">report</a></span>
@@ -1142,7 +1144,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1956 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1956-10.md">report</a></span>
@@ -1150,7 +1152,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1956 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1956-04.md">report</a></span>
@@ -1158,7 +1160,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1955 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1955-10.md">report</a></span>
@@ -1166,7 +1168,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1955 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1955-04.md">report</a></span>
@@ -1174,7 +1176,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1954 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1954-10.md">report</a></span>
@@ -1182,7 +1184,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1954 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1954-04.md">report</a></span>
@@ -1190,7 +1192,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1953 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1953-10.md">report</a></span>
@@ -1198,7 +1200,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1953 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1953-04.md">report</a></span>
@@ -1206,7 +1208,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1952 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1952-10.md">report</a></span>
@@ -1214,7 +1216,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1952 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1952-04.md">report</a></span>
@@ -1222,7 +1224,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1951 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1951-10.md">report</a></span>
@@ -1230,7 +1232,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1951 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1951-04.md">report</a></span>
@@ -1238,7 +1240,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1950 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1950-10.md">report</a></span>
@@ -1246,7 +1248,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1950 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid-1950s</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1950-04.md">report</a></span>
@@ -1254,7 +1256,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1949 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1949-10.md">report</a></span>
@@ -1262,7 +1264,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1949 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1949-04.md">report</a></span>
@@ -1270,7 +1272,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1948 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">36 / 36</span>
@@ -1278,7 +1280,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1948 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">34 / 34</span>
@@ -1286,7 +1288,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1947 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">34 / 34</span>
@@ -1294,7 +1296,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1947 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">34 / 34</span>
@@ -1302,7 +1304,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1946 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1946-10.md">report</a></span>
@@ -1310,7 +1312,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1946 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">37 / 37</span>
@@ -1318,7 +1320,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1945 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1945-10.md">report</a></span>
@@ -1326,31 +1328,31 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1945 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1945-04.md">report</a></span>
-  </div><div class="ln" data-search="1944 october samuel baird progress/reports/conference-reports/1944-10.md submitted" title="1944 October — submitted — 38 / 38 — Samuel Baird — all 38 verified — all 38 heavyweight — progress/reports/conference-reports/1944-10.md">
+  </div><div class="ln" data-search="1944 october samuel baird progress/reports/conference-reports/1944-10.md submitted" title="1944 October — submitted — 38 / 38 — Samuel Baird — all 38 verified — all 38 heavyweight — audit pass — progress/reports/conference-reports/1944-10.md">
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1944 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-pass">✓</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
-    <span class="ln-count"><a href="progress/reports/conference-reports/1944-10.md">report</a></span>
-  </div><div class="ln" data-search="1944 april sid progress/reports/conference-reports/1944-04.md submitted" title="1944 April — submitted — 35 / 35 — Sid — all 35 verified — all 35 heavyweight — progress/reports/conference-reports/1944-04.md">
+    <span class="ln-count"><a href="progress/reports/conference-reports/1944-10.md">report</a> · <a href="progress/audits/conference-reports/1944-10-audit.md">audit</a></span>
+  </div><div class="ln" data-search="1944 april sid progress/reports/conference-reports/1944-04.md submitted" title="1944 April — submitted — 35 / 35 — Sid — all 35 verified — all 35 heavyweight — audit: attention required — progress/reports/conference-reports/1944-04.md">
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1944 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-attention">◑</i>
     </span>
     <span class="ln-who">Sid</span>
-    <span class="ln-count"><a href="progress/reports/conference-reports/1944-04.md">report</a></span>
+    <span class="ln-count"><a href="progress/reports/conference-reports/1944-04.md">report</a> · <a href="progress/audits/conference-reports/1944-04-audit.md">audit</a></span>
   </div><div class="ln" data-search="1943 october samuel baird progress/reports/conference-reports/1943-10.md submitted" title="1943 October — submitted — 34 / 34 — Samuel Baird — all 34 verified — all 34 heavyweight — progress/reports/conference-reports/1943-10.md">
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1943 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1943-10.md">report</a></span>
@@ -1358,7 +1360,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1943 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1943-04.md">report</a></span>
@@ -1366,7 +1368,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1942 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1942-10.md">report</a></span>
@@ -1374,7 +1376,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1942 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1942-04.md">report</a></span>
@@ -1382,7 +1384,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1941 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1941-10.md">report</a></span>
@@ -1390,7 +1392,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1941 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1941-04.md">report</a></span>
@@ -1398,7 +1400,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1940 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1940-10.md">report</a></span>
@@ -1406,7 +1408,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1940 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1940-04.md">report</a></span>
@@ -1414,7 +1416,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1939 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1939-10.md">report</a></span>
@@ -1422,7 +1424,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1939 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1939-04.md">report</a></span>
@@ -1430,7 +1432,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1938 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1938-10.md">report</a></span>
@@ -1438,7 +1440,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1938 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1938-04.md">report</a></span>
@@ -1446,7 +1448,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1937 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1937-10.md">report</a></span>
@@ -1454,7 +1456,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1937 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1937-04.md">report</a></span>
@@ -1462,7 +1464,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1936 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1936-10.md">report</a></span>
@@ -1470,7 +1472,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1936 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1936-04.md">report</a></span>
@@ -1478,7 +1480,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1935 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1935-10.md">report</a></span>
@@ -1486,7 +1488,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1935 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1935-04.md">report</a></span>
@@ -1494,7 +1496,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1934 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1934-10.md">report</a></span>
@@ -1502,7 +1504,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1934 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1934-04.md">report</a></span>
@@ -1510,7 +1512,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1933 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1933-10.md">report</a></span>
@@ -1518,7 +1520,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1933 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1933-04.md">report</a></span>
@@ -1526,7 +1528,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1932 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1932-10.md">report</a></span>
@@ -1534,7 +1536,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1932 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1932-04.md">report</a></span>
@@ -1542,7 +1544,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1931 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1931-10.md">report</a></span>
@@ -1550,7 +1552,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1931 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1931-04.md">report</a></span>
@@ -1558,7 +1560,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1930 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1930-10.md">report</a></span>
@@ -1566,7 +1568,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1930 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1930-04.md">report</a></span>
@@ -1574,7 +1576,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1929 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">46 / 46</span>
@@ -1582,7 +1584,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1929 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">44 / 44</span>
@@ -1590,7 +1592,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1928 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">41 / 41</span>
@@ -1598,7 +1600,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1928 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">39 / 39</span>
@@ -1606,7 +1608,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1927 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">66 / 66</span>
@@ -1614,7 +1616,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1927 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">57 / 57</span>
@@ -1622,7 +1624,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1926 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">47 / 47</span>
@@ -1630,7 +1632,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1926 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1926-04.md">report</a></span>
@@ -1638,7 +1640,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1925 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">59 / 59</span>
@@ -1646,7 +1648,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1925 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">55 / 55</span>
@@ -1654,7 +1656,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1924 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">61 / 61</span>
@@ -1662,7 +1664,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1924 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">47 / 47</span>
@@ -1670,7 +1672,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1923 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">57 / 57</span>
@@ -1678,7 +1680,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1923 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">65 / 65</span>
@@ -1686,7 +1688,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1922 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">58 / 58</span>
@@ -1694,7 +1696,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1922 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">50 / 50</span>
@@ -1702,7 +1704,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1921 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">68 / 68</span>
@@ -1710,7 +1712,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1921 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1921-04.md">report</a></span>
@@ -1718,7 +1720,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1920 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1920-10.md">report</a></span>
@@ -1726,7 +1728,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1920 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1920-04.md">report</a></span>
@@ -1734,7 +1736,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1919 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1919-10.md">report</a></span>
@@ -1742,7 +1744,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1919 June</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1919-06.md">report</a></span>
@@ -1756,7 +1758,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1919 June (mislabeled &quot;1919 April&quot; pre-redo)</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1919-06.md">report</a></span>
@@ -1764,7 +1766,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1918 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1918-10.md">report</a></span>
@@ -1772,7 +1774,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1918 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1918-04.md">report</a></span>
@@ -1780,7 +1782,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1917 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1917-10.md">report</a></span>
@@ -1788,7 +1790,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1917 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1917-04.md">report</a></span>
@@ -1796,7 +1798,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1916 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1916-10.md">report</a></span>
@@ -1804,7 +1806,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1916 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1916-04.md">report</a></span>
@@ -1812,7 +1814,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1915 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1915-10.md">report</a></span>
@@ -1820,7 +1822,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1915 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1915-04.md">report</a></span>
@@ -1828,7 +1830,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1914 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1914-10.md">report</a></span>
@@ -1836,7 +1838,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1914 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1914-04.md">report</a></span>
@@ -1844,7 +1846,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1913 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1913-10.md">report</a></span>
@@ -1852,7 +1854,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1913 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1913-04.md">report</a></span>
@@ -1860,7 +1862,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1912 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1912-10.md">report</a></span>
@@ -1868,7 +1870,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1912 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1912-04.md">report</a></span>
@@ -1876,7 +1878,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1911 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1911-10.md">report</a></span>
@@ -1884,7 +1886,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1911 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1911-04.md">report</a></span>
@@ -1892,7 +1894,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1910 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">35 / 35</span>
@@ -1900,7 +1902,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1910 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid</span>
     <span class="ln-count">30 / 30</span>
@@ -1908,7 +1910,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1909 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">29 / 29</span>
@@ -1916,7 +1918,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1909 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">32 / 32</span>
@@ -1924,7 +1926,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1908 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">33 / 33</span>
@@ -1932,7 +1934,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1908 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">35 / 35</span>
@@ -1940,7 +1942,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1907 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">28 / 28</span>
@@ -1948,7 +1950,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1907 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">38 / 38</span>
@@ -1956,7 +1958,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1906 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">34 / 34</span>
@@ -1964,7 +1966,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1906 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">38 / 38</span>
@@ -1972,7 +1974,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1905 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1905-10.md">report</a></span>
@@ -1980,7 +1982,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1905 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1905-04.md">report</a></span>
@@ -1988,7 +1990,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1904 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1904-10.md">report</a></span>
@@ -1996,7 +1998,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1904 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">29 / 29</span>
@@ -2004,7 +2006,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1903 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1903-10.md">report</a></span>
@@ -2012,7 +2014,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1903 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1903-04.md">report</a></span>
@@ -2020,7 +2022,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1902 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">56 / 56</span>
@@ -2028,7 +2030,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1902 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">40 / 40</span>
@@ -2036,7 +2038,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1901 November Special Conference</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">8 / 8</span>
@@ -2044,7 +2046,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1901 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1901-10.md">report</a></span>
@@ -2052,7 +2054,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1901 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1901-04.md">report</a></span>
@@ -2060,7 +2062,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1900 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">22 / 22</span>
@@ -2068,7 +2070,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1900 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">19 / 19</span>
@@ -2076,7 +2078,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1899 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">21 / 21</span>
@@ -2084,7 +2086,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1899 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">25 / 25</span>
@@ -2092,7 +2094,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1898 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">17 / 17</span>
@@ -2100,7 +2102,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1898 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count">28 / 28</span>
@@ -2108,7 +2110,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1897 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/conference-reports/1897-10.md">report</a></span>
@@ -2122,7 +2124,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">Columbia Broadcasting System &quot;Church of the Air&quot; broadcast, Salt Lake Tabernacle</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">1 / 1</span>
@@ -2134,7 +2136,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1919 June</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -2142,7 +2144,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1896 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-partial">◑</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-partial">◑</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1896-10.md">report</a></span>
@@ -2150,7 +2152,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1896 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1896-04.md">report</a></span>
@@ -2158,7 +2160,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1895 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1895-10.md">report</a></span>
@@ -2166,7 +2168,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1895 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1895-04.md">report</a></span>
@@ -2174,7 +2176,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1894 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1894-10.md">report</a></span>
@@ -2182,7 +2184,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1894 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1894-04.md">report</a></span>
@@ -2190,7 +2192,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1893 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1893-10.md">report</a></span>
@@ -2198,7 +2200,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1893 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1893-04.md">report</a></span>
@@ -2206,7 +2208,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1892 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1892-10.md">report</a></span>
@@ -2214,7 +2216,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1892 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1892-04.md">report</a></span>
@@ -2222,7 +2224,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1891 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1891-10.md">report</a></span>
@@ -2230,7 +2232,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1891 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1891-04.md">report</a></span>
@@ -2238,7 +2240,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1890 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1890-10.md">report</a></span>
@@ -2246,7 +2248,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1890 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1890-04.md">report</a></span>
@@ -2254,7 +2256,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1889 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1889-10.md">report</a></span>
@@ -2262,7 +2264,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1889 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1889-04.md">report</a></span>
@@ -2270,7 +2272,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1888 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1888-10.md">report</a></span>
@@ -2278,7 +2280,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1888 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1888-04.md">report</a></span>
@@ -2286,7 +2288,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1887 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1887-10.md">report</a></span>
@@ -2294,7 +2296,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1887 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1887-04.md">report</a></span>
@@ -2302,7 +2304,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1887 April (Provo)</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1887-04.md">report</a></span>
@@ -2310,7 +2312,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1886 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1886-10.md">report</a></span>
@@ -2318,7 +2320,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1886 October (Coalville)</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1886-10.md">report</a></span>
@@ -2326,7 +2328,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1886 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1886-04.md">report</a></span>
@@ -2334,7 +2336,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1886 April (Provo)</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1886-04.md">report</a></span>
@@ -2342,7 +2344,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1885 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1885-10.md">report</a></span>
@@ -2350,7 +2352,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1885 October (Logan)</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1885-10.md">report</a></span>
@@ -2358,7 +2360,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1885 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1885-04.md">report</a></span>
@@ -2366,7 +2368,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1885 April (Logan)</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1885-04.md">report</a></span>
@@ -2374,7 +2376,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1884 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1884-10.md">report</a></span>
@@ -2382,7 +2384,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1884 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-partial">◑</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-partial">◑</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird / Sid Lancaster</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1884-04.md">report</a></span>
@@ -2390,7 +2392,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1883 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1883-10.md">report</a></span>
@@ -2398,7 +2400,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1883 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1883-04.md">report</a></span>
@@ -2406,7 +2408,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1882 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1882-10.md">report</a></span>
@@ -2414,7 +2416,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1882 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1882-04.md">report</a></span>
@@ -2422,7 +2424,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1881 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1881-10.md">report</a></span>
@@ -2430,7 +2432,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1881 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1881-04.md">report</a></span>
@@ -2438,7 +2440,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1880 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1880-10.md">report</a></span>
@@ -2446,7 +2448,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1880 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1880-04.md">report</a></span>
@@ -2454,7 +2456,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1879 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1879-10.md">report</a></span>
@@ -2462,7 +2464,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1879 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1879-04.md">report</a></span>
@@ -2470,7 +2472,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1878 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1878-10.md">report</a></span>
@@ -2478,7 +2480,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1878 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1878-04.md">report</a></span>
@@ -2486,7 +2488,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1877 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1877-10.md">report</a></span>
@@ -2494,7 +2496,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1877 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1877-04.md">report</a></span>
@@ -2502,7 +2504,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1877 April (St. George)</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1877-04.md">report</a></span>
@@ -2510,7 +2512,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1876 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1876-10.md">report</a></span>
@@ -2518,7 +2520,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1876 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1876-04.md">report</a></span>
@@ -2526,7 +2528,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1875 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1875-10.md">report</a></span>
@@ -2534,7 +2536,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1875 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1875-04.md">report</a></span>
@@ -2542,7 +2544,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1874 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1874-10.md">report</a></span>
@@ -2550,7 +2552,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1874 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">8 / 8</span>
@@ -2558,7 +2560,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1874 April/May</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1874-04-05.md">report</a></span>
@@ -2566,7 +2568,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1873 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1873-10.md">report</a></span>
@@ -2574,7 +2576,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1873 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1873-04.md">report</a></span>
@@ -2582,7 +2584,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1872 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1872-10.md">report</a></span>
@@ -2590,7 +2592,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1872 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1872-04.md">report</a></span>
@@ -2598,7 +2600,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1871 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1871-10.md">report</a></span>
@@ -2606,7 +2608,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1871 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1871-04.md">report</a></span>
@@ -2614,7 +2616,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1870 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1870-10.md">report</a></span>
@@ -2622,7 +2624,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1870 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">11 / 11</span>
@@ -2630,7 +2632,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1870 April/May</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1870-04-05.md">report</a></span>
@@ -2638,7 +2640,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1869 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1869-10.md">report</a></span>
@@ -2646,7 +2648,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1869 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1869-04.md">report</a></span>
@@ -2654,7 +2656,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1868 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1868-10.md">report</a></span>
@@ -2662,7 +2664,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1868 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1868-04.md">report</a></span>
@@ -2670,7 +2672,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1867 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1867-10.md">report</a></span>
@@ -2678,7 +2680,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1867 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1867-04.md">report</a></span>
@@ -2686,7 +2688,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1866 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1866-10.md">report</a></span>
@@ -2694,7 +2696,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1866 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1866-04.md">report</a></span>
@@ -2702,7 +2704,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1865 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1865-10.md">report</a></span>
@@ -2710,7 +2712,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1865 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1865-04.md">report</a></span>
@@ -2718,7 +2720,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1864 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1864-10.md">report</a></span>
@@ -2726,7 +2728,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1864 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1864-04.md">report</a></span>
@@ -2734,7 +2736,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1863 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1863-10.md">report</a></span>
@@ -2742,7 +2744,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1863 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1863-04.md">report</a></span>
@@ -2750,7 +2752,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1862 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1862-10.md">report</a></span>
@@ -2758,7 +2760,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1862 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1862-04.md">report</a></span>
@@ -2766,7 +2768,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1861 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1861-10.md">report</a></span>
@@ -2774,7 +2776,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1861 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1861-04.md">report</a></span>
@@ -2782,7 +2784,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1860 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1860-10.md">report</a></span>
@@ -2790,7 +2792,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1860 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1860-04.md">report</a></span>
@@ -2798,7 +2800,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1859 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1859-10.md">report</a></span>
@@ -2806,7 +2808,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1859 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1859-04.md">report</a></span>
@@ -2814,7 +2816,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1858 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1858-10.md">report</a></span>
@@ -2822,7 +2824,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1858 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1858-04.md">report</a></span>
@@ -2830,7 +2832,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1857 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1857-10.md">report</a></span>
@@ -2838,7 +2840,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1857 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1857-04.md">report</a></span>
@@ -2846,7 +2848,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1856 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1856-10.md">report</a></span>
@@ -2854,7 +2856,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1856 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1856-04.md">report</a></span>
@@ -2862,7 +2864,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1855 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1855-10.md">report</a></span>
@@ -2870,7 +2872,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1855 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1855-04.md">report</a></span>
@@ -2878,7 +2880,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1854 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1854-10.md">report</a></span>
@@ -2886,7 +2888,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1854 June</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -2894,7 +2896,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1854 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1854-04.md">report</a></span>
@@ -2902,7 +2904,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1853 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1853-10.md">report</a></span>
@@ -2910,7 +2912,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1853 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1853-04.md">report</a></span>
@@ -2918,7 +2920,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1852 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1852-10.md">report</a></span>
@@ -2926,7 +2928,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1852 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1852-04.md">report</a></span>
@@ -2934,7 +2936,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1851 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">2 / 2</span>
@@ -2942,7 +2944,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1851 September</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1851-09.md">report</a></span>
@@ -2950,7 +2952,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-heavy"></span>
     <span class="ln-when">1851 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-on">✓</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Samuel Baird</span>
     <span class="ln-count"><a href="progress/reports/journal-of-discourses/1851-04.md">report</a></span>
@@ -2962,7 +2964,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1850 September</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/early-restoration/1850-09.md">report</a></span>
@@ -2970,7 +2972,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1850 April</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -2978,7 +2980,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1849 October</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -2986,7 +2988,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1849 April</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -2994,7 +2996,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1848 October</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3002,7 +3004,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1848 April</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3010,7 +3012,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1847 December (Sustaining)</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"><a href="progress/reports/early-restoration/1847-12.md">report</a></span>
@@ -3018,7 +3020,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1847 October</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3026,7 +3028,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1847 April</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3034,7 +3036,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1846 October</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3042,7 +3044,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1846 April</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3050,7 +3052,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1845 October</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3058,7 +3060,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-open"></span>
     <span class="ln-when">1845 April</span>
     <span class="ln-status">
-      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-off">○</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count"></span>
@@ -3066,7 +3068,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1844 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3074,7 +3076,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1844 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3082,7 +3084,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1843 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3090,7 +3092,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1843 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3104,7 +3106,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1842 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3112,7 +3114,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1841 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3120,7 +3122,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1841 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3128,7 +3130,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1840 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3136,7 +3138,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1840 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3144,7 +3146,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1839 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3152,7 +3154,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1839 April</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3160,7 +3162,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1838 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3168,7 +3170,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1838 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3176,7 +3178,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1837 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3184,7 +3186,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1837 September</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3192,7 +3194,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1836 December</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3200,7 +3202,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1836 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3208,7 +3210,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1835 August</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3216,7 +3218,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1835 May</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3224,7 +3226,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1834 August</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3232,7 +3234,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1834 August Special Conference</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">1 / 1</span>
@@ -3240,7 +3242,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1834 May</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3248,7 +3250,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1833 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3256,7 +3258,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1833 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3264,7 +3266,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-progress"></span>
     <span class="ln-when">1832 October</span>
     <span class="ln-status">
-      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i>
+      <i class="dot import-partial">◑</i><i class="dot verify-off">○</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count"></span>
@@ -3272,7 +3274,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1832 January</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">2 / 2</span>
@@ -3280,7 +3282,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1831 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">2 / 2</span>
@@ -3288,7 +3290,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1831 June</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3296,7 +3298,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1831 January</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3304,7 +3306,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1830 October</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
@@ -3312,7 +3314,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1830 September</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">1 / 1</span>
@@ -3320,7 +3322,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1830 June</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who"></span>
     <span class="ln-count">1 / 1</span>
@@ -3328,7 +3330,7 @@ details.era-break-collapse[open] .era-break-toggle{color:var(--color-muted)}
     <span class="ln-tick tick-verify"></span>
     <span class="ln-when">1830 April</span>
     <span class="ln-status">
-      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i>
+      <i class="dot import-on">✓</i><i class="dot verify-on">✓</i><i class="dot heavy-off">○</i><i class="dot audit-off">○</i>
     </span>
     <span class="ln-who">Tyler</span>
     <span class="ln-count">1 / 1</span>
